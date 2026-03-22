@@ -6,6 +6,7 @@ type SectionHeadingProps = {
   description?: string;
   align?: "left" | "center";
   className?: string;
+  as?: "h1" | "h2";
 };
 
 export function SectionHeading({
@@ -14,6 +15,7 @@ export function SectionHeading({
   description,
   align = "left",
   className,
+  as: HeadingTag = "h2",
 }: SectionHeadingProps) {
   return (
     <div
@@ -31,9 +33,9 @@ export function SectionHeading({
           <span className="gold-divider mb-5 inline-block" aria-hidden="true" />
         </>
       ) : null}
-      <h2 className="font-serif text-[2.15rem] leading-[1.06] text-balance text-foreground sm:text-[2.7rem] lg:text-[3.2rem]">
+      <HeadingTag className="font-serif text-[2.15rem] leading-[1.06] text-balance text-foreground sm:text-[2.7rem] lg:text-[3.2rem]">
         {title}
-      </h2>
+      </HeadingTag>
       {description ? (
         <p
           className={cn(

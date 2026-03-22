@@ -4,8 +4,8 @@ import type { BreadcrumbItem } from "@/lib/seo";
 
 type JsonLdObject = Record<string, unknown>;
 
-function getAreaServed() {
-  return siteConfig.serviceAreas.map((area) => ({
+function getAreaServed(areas: readonly string[] = siteConfig.serviceAreas) {
+  return areas.map((area) => ({
     "@type": "AdministrativeArea",
     name: area,
   }));
@@ -45,9 +45,13 @@ export function buildOrganizationSchema({
 export function buildLocalBusinessSchema({
   locale,
   description,
+  pathname = "/",
+  areaServed = siteConfig.serviceAreas,
 }: {
   locale: AppLocale;
   description: string;
+  pathname?: string;
+  areaServed?: readonly string[];
 }): JsonLdObject {
   const sameAs = Object.values(siteConfig.socialLinks);
 
@@ -57,11 +61,11 @@ export function buildLocalBusinessSchema({
     "@id": `${siteConfig.domain}#localbusiness`,
     name: siteConfig.name,
     description,
-    url: siteConfig.domain,
+    url: getLocalizedUrl(locale, pathname),
     image: getAbsoluteUrl(siteConfig.ogImagePath),
     telephone: siteConfig.phoneNumber,
     email: siteConfig.email,
-    areaServed: getAreaServed(),
+    areaServed: getAreaServed(areaServed),
     inLanguage: locale,
     address: {
       "@type": "PostalAddress",
@@ -80,11 +84,13 @@ export function buildServiceSchema({
   name,
   description,
   pathname,
+  areaServed = siteConfig.serviceAreas,
 }: {
   locale: AppLocale;
   name: string;
   description: string;
   pathname: string;
+  areaServed?: readonly string[];
 }): JsonLdObject {
   return {
     "@context": "https://schema.org",
@@ -98,7 +104,7 @@ export function buildServiceSchema({
       url: getLocalizedUrl(locale),
       telephone: siteConfig.phoneNumber,
     },
-    areaServed: getAreaServed(),
+    areaServed: getAreaServed(areaServed),
     url: getLocalizedUrl(locale, pathname),
   };
 }

@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 
 import { pageRoutes } from "@/config/navigation";
 import { getLanguageAlternates, getLocalizedUrl } from "@/config/site";
+import { cityLandingPathnames } from "@/data/cityLandingPages";
 import { routing } from "@/i18n/routing";
 
 type SitemapChangeFrequency = NonNullable<
@@ -19,13 +20,20 @@ const routeSettings: Record<
   "/portfolio": { changeFrequency: "monthly", priority: 0.8 },
   "/testimonials": { changeFrequency: "monthly", priority: 0.8 },
   "/contact": { changeFrequency: "monthly", priority: 0.9 },
+  ...Object.fromEntries(
+    cityLandingPathnames.map((pathname) => [
+      pathname,
+      { changeFrequency: "weekly" as const, priority: 0.88 },
+    ]),
+  ),
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
+  const sitemapRoutes = [...pageRoutes, ...cityLandingPathnames];
 
   return routing.locales.flatMap((locale) =>
-    pageRoutes.map((pathname) => {
+    sitemapRoutes.map((pathname) => {
       const settings = routeSettings[pathname] ?? {
         changeFrequency: "monthly" as const,
         priority: 0.7,

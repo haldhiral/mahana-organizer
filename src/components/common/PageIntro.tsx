@@ -31,6 +31,7 @@ export function PageIntro({
           <div>
             <Breadcrumbs items={breadcrumbItems} />
             <SectionHeading
+              as="h1"
               eyebrow={eyebrow}
               title={title}
               description={description}
