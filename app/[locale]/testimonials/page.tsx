@@ -84,12 +84,12 @@ function TestimonialsPageContent({ locale }: { locale: AppLocale }) {
             title={t("trust.title")}
             description={t("trust.description")}
           />
-          <div className="mt-10 grid gap-5 md:grid-cols-3">
+          <div className="mt-10 grid gap-4 md:grid-cols-3 lg:gap-5">
             {["clarity", "calm", "hospitality"].map((item, index) => (
               <PremiumSectionShell
                 key={item}
                 tone={index === 1 ? "rose" : "soft"}
-                className="panel-hover rounded-[2rem] p-6"
+                className="panel-hover rounded-[2rem] p-5 sm:p-6"
               >
                 <h3 className="font-serif text-2xl text-foreground">
                   {t(`trust.items.${item}.title`)}

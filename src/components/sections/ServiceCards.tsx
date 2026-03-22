@@ -24,22 +24,22 @@ export function ServiceCards({
     : offerings.serviceSummaries;
 
   return (
-    <div className={cn("grid gap-5 md:grid-cols-2 xl:grid-cols-4", className)}>
+    <div className={cn("grid gap-4 md:grid-cols-2 xl:grid-cols-4 xl:gap-5", className)}>
       {items.map((service, index) => {
         const tones = ["soft", "rose", "champagne", "soft"] as const;
         return (
           <PremiumSectionShell
             key={service.id}
             tone={tones[index % tones.length]}
-            className="panel-hover flex h-full flex-col rounded-[2rem] p-6 transition-shadow duration-300 hover:shadow-[0_20px_48px_rgba(80,59,43,0.12)]"
+            className="panel-hover flex h-full flex-col rounded-[2rem] p-5 transition-shadow duration-300 hover:shadow-[0_20px_48px_rgba(80,59,43,0.12)] sm:p-6"
           >
             <div className="mb-4 flex items-center gap-3">
-              <span className="flex h-8 w-8 items-center justify-center rounded-full border border-primary/20 bg-primary/8 text-xs font-bold text-primary">
+              <span className="flex h-9 w-9 items-center justify-center rounded-full border border-primary/20 bg-primary/8 text-xs font-bold text-primary">
                 {String(index + 1).padStart(2, "0")}
               </span>
               <Badge className="self-start">{service.badge}</Badge>
             </div>
-            <h3 className="font-serif text-[2rem] leading-tight text-foreground">
+            <h3 className="font-serif text-[1.8rem] leading-tight text-foreground sm:text-[1.95rem]">
               {service.title}
             </h3>
             <p className="mt-3 text-sm leading-7 text-muted-foreground sm:text-base">

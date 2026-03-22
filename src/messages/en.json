@@ -37,7 +37,7 @@
     "social": "Social",
     "hours": "Response window: {hours}",
     "coverage": "Serving: {areas}",
-    "copyright": "© {year} Mahana Organizer. All rights reserved.",
+    "copyright": "Copyright {year} Mahana Organizer. All rights reserved.",
     "locale": "Active language: {locale}"
   },
   "metadata": {
@@ -116,7 +116,7 @@
       "primaryCta": "Book a Consultation",
       "secondaryCta": "Start on WhatsApp",
       "imageLabel": "Illustration of Mahana Organizer wedding planning atmosphere",
-      "highlightTitle": "Clear guidance from the first briefing to the final vendor call.",
+      "highlightTitle": "Clear guidance from the first briefing to the final vendor coordination.",
       "highlightBody": "Every detail is structured so you can stay fully present in your most important moments without carrying the technical load yourself.",
       "coverageLabel": "Coverage",
       "stats": {
@@ -174,8 +174,8 @@
     },
     "areasSection": {
       "eyebrow": "Coverage",
-      "title": "Serving couples across Jakarta, Bogor, Depok, Bekasi, and Tangerang without making communication feel distant.",
-      "description": "Every consultation naturally covers venue logistics, vendor coordination, and scheduling across our full service area so the process stays seamless from the start."
+      "title": "Serving couples across Jakarta, Bogor, Depok, Bekasi, and Tangerang with planning that still feels close and attentive.",
+      "description": "Wherever your venue sits within our service area, consultations remain practical, warm, and easy to coordinate from the first conversation."
     },
     "faq": {
       "eyebrow": "FAQ",
@@ -211,7 +211,7 @@
     "values": {
       "eyebrow": "Working values",
       "title": "Four principles behind every decision we make.",
-      "description": "These values keep each project consistent, from internal communication to the guest experience on the wedding day.",
+      "description": "These values keep each celebration consistent, from the first conversation to the guest experience on the wedding day.",
       "items": {
         "clarity": {
           "title": "Clarity",
@@ -281,8 +281,8 @@
   "servicesPage": {
     "intro": {
       "eyebrow": "Mahana Organizer Services",
-      "title": "Support that can begin with big-picture strategy and extend all the way to event-day details.",
-      "description": "Each service is structured so couples receive the right level of support without paying for layers they do not need yet."
+      "title": "Support that can begin with early planning direction and continue all the way to the event-day details.",
+      "description": "Each service is shaped so couples receive the level of guidance that matches the scale and complexity of their celebration."
     },
     "snapshot": {
       "title": "Our services work best when couples need a partner who can shape decisions, not simply execute a checklist."
@@ -311,7 +311,7 @@
       "body": "Start with a consultation. We can help assess whether you need full planning, wedding day coordination, or a more efficient combination of support."
     },
     "coverage": {
-      "title": "Our service coverage feels seamless because it is built into how we work.",
+      "title": "Wherever your venue is within our service area, the planning rhythm stays close and well supported.",
       "body": "Mahana Organizer serves weddings across Jakarta, Bogor, Depok, Bekasi, and Tangerang. Venue logistics, vendor coordination, and travel planning are all handled during consultation so every event feels close and well-supported."
     },
     "areasSection": {
@@ -328,12 +328,12 @@
   "packagesPage": {
     "intro": {
       "eyebrow": "Mahana Organizer Packages",
-      "title": "A package lineup for wedding-day coordination, planning support, and more complete celebrations.",
-      "description": "This page clearly presents the On The Day Package, Wedding Planner Service, All-in Exclusive Package, and Additional Catering so early comparison feels easier."
+      "title": "A refined collection of packages for wedding-day coordination, planning support, and more complete celebrations.",
+      "description": "Explore the On The Day Package, Wedding Planner Service, All-in Exclusive Package, and Additional Catering as a clear starting point for your celebration."
     },
     "featuredLabel": "Recommended",
     "audienceLabel": "Suitable for",
-    "comparisonNote": "Prices are not displayed as fixed rates. Each package can be tailored after an initial consultation.",
+    "comparisonNote": "Package pricing is tailored after an initial consultation so the recommendation suits your celebration more precisely.",
     "cards": {
       "cta": "Discuss This Package",
       "atelier": {
@@ -526,7 +526,7 @@
     },
     "response": {
       "eyebrow": "What to expect",
-      "title": "Our response style is designed to feel concise, clear, and never directionless.",
+      "title": "You can expect a response that feels clear, warm, and easy to follow.",
       "description": "After receiving your inquiry, we usually review the basics first and then suggest the most relevant next step.",
       "items": {
         "review": {
@@ -545,8 +545,8 @@
     },
     "areasSection": {
       "eyebrow": "Service area",
-      "title": "Jakarta, Bogor, Depok, Bekasi, and Tangerang are all handled through the same clear communication rhythm.",
-      "description": "All service areas are discussed directly during your inquiry and venue planning so you always feel supported, no matter the location."
+      "title": "Jakarta, Bogor, Depok, Bekasi, and Tangerang all stay within one calm communication rhythm.",
+      "description": "From the first inquiry to venue coordination, support stays close and reassuring wherever your celebration is held."
     },
     "faq": {
       "eyebrow": "Quick questions",
@@ -564,10 +564,10 @@
       "message": "Tell us what you need"
     },
     "placeholders": {
-      "name": "Example: Amelia Putri",
+      "name": "Amelia Putri",
       "email": "name@email.com",
-      "phone": "Example: +62 812 3456 7890",
-      "eventLocation": "Example: South Jakarta",
+      "phone": "+62 812 3456 7890",
+      "eventLocation": "South Jakarta",
       "message": "Share your event outline, guest count, selected vendors, or the main questions you would like to discuss."
     },
     "submit": "Send Inquiry",
@@ -645,7 +645,7 @@
     "items": {
       "coverage": {
         "question": "Does Mahana Organizer serve Jakarta, Bogor, Depok, Bekasi, and Tangerang?",
-        "answer": "Yes. We currently focus on serving couples across Jakarta, Bogor, Depok, Bekasi, and Tangerang. Coverage is discussed directly during consultation so venue adjustments, site visits, and meeting schedules can stay efficient."
+        "answer": "Yes. We serve couples across Jakarta, Bogor, Depok, Bekasi, and Tangerang. During consultation, venue details, site visits, and meeting schedules are aligned so the planning process stays efficient."
       },
       "consultation": {
         "question": "What should we prepare before the first consultation?",

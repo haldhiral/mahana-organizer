@@ -38,7 +38,7 @@ export function buttonStyles({
   className,
 }: ButtonStyleOptions = {}) {
   return cn(
-    "inline-flex items-center justify-center gap-2 rounded-full px-0 font-medium tracking-[0.01em] transition-all duration-300 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background hover:-translate-y-0.5 hover:scale-[1.01] active:scale-[0.98] active:translate-y-0 disabled:pointer-events-none disabled:translate-y-0 disabled:scale-100 disabled:opacity-50",
+    "inline-flex min-w-0 items-center justify-center gap-2 rounded-full px-0 text-center font-medium tracking-[0.01em] whitespace-normal transition-all duration-300 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background hover:-translate-y-0.5 hover:scale-[1.01] active:scale-[0.98] active:translate-y-0 disabled:pointer-events-none disabled:translate-y-0 disabled:scale-100 disabled:opacity-50",
     variantClasses[variant],
     sizeClasses[size],
     fullWidth && "w-full",

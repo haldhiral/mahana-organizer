@@ -22,11 +22,11 @@ export function PageIntro({
   aside,
 }: PageIntroProps) {
   return (
-    <section className="page-pad pb-14 sm:pb-18">
+    <section className="page-pad pb-12 sm:pb-16">
       <Container>
         <PremiumSectionShell
           tone="soft"
-          className="hero-mesh lg:grid lg:grid-cols-[1.28fr_0.72fr] lg:items-start lg:gap-14"
+          className="hero-mesh rounded-[2.6rem] px-5 py-6 sm:px-7 sm:py-8 lg:grid lg:grid-cols-[1.2fr_0.8fr] lg:items-start lg:gap-10 lg:px-10 lg:py-10"
         >
           <div>
             <Breadcrumbs items={breadcrumbItems} />
@@ -37,7 +37,7 @@ export function PageIntro({
               className="mt-5"
             />
           </div>
-          {aside ? <div className="mt-8 lg:mt-2 lg:pl-4">{aside}</div> : null}
+          {aside ? <div className="mt-8 lg:mt-2 lg:pl-2">{aside}</div> : null}
         </PremiumSectionShell>
       </Container>
     </section>

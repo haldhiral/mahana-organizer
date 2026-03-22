@@ -18,28 +18,19 @@ export function Footer() {
   return (
     <footer className="section-pad pb-8">
       <Container>
-        <PremiumSectionShell
-          tone="soft"
-          className="rounded-[2.8rem] p-8 sm:p-10 lg:p-14"
-        >
+        <PremiumSectionShell tone="soft" className="rounded-[2.8rem] p-6 sm:p-8 lg:p-12">
           <span className="gold-divider mb-10 inline-block" aria-hidden="true" />
-          <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr_1fr]">
-            {/* Brand column */}
+          <div className="grid gap-10 sm:grid-cols-2 xl:grid-cols-[1.25fr_0.8fr_1fr]">
             <div>
-              <p className="text-lg font-bold tracking-[0.08em] text-foreground">
-                MAHANA
-              </p>
-              <p className="mt-4 max-w-sm text-sm leading-7 text-muted-foreground">
+              <p className="text-lg font-bold tracking-[0.08em] text-foreground">MAHANA</p>
+              <p className="mt-4 max-w-md text-sm leading-7 text-muted-foreground sm:text-[0.98rem]">
                 {tFooter("description", { areas: areasStr })}
               </p>
               <div className="mt-6">
-                <WhatsAppButton
-                  label={tFooter("ctaButton")}
-                />
+                <WhatsAppButton label={tFooter("ctaButton")} className="w-full sm:w-auto" />
               </div>
             </div>
 
-            {/* Navigation */}
             <div>
               <p className="eyebrow-label mb-5">{tFooter("quickLinks")}</p>
               <nav aria-label="Footer navigation">
@@ -48,7 +39,7 @@ export function Footer() {
                     <li key={item.href}>
                       <Link
                         href={item.href}
-                        className="text-sm text-muted-foreground transition-colors duration-200 hover:text-foreground"
+                        className="inline-flex rounded-full px-3 py-1.5 text-sm text-muted-foreground transition-colors duration-200 hover:bg-white/55 hover:text-foreground"
                       >
                         {tNav(item.labelKey)}
                       </Link>
@@ -58,17 +49,16 @@ export function Footer() {
               </nav>
             </div>
 
-            {/* Contact & Social */}
             <div>
               <p className="eyebrow-label mb-5">{tFooter("contact")}</p>
-              <ul className="flex flex-col gap-2.5 text-sm text-muted-foreground">
+              <ul className="flex flex-col gap-3 text-sm text-muted-foreground sm:text-[0.98rem]">
                 <li>{tFooter("hours", { hours: siteConfig.responseHours })}</li>
                 <li>{tFooter("coverage", { areas: areasStr })}</li>
                 <li>{siteConfig.email}</li>
               </ul>
 
               <p className="eyebrow-label mb-4 mt-8">{tFooter("social")}</p>
-              <div className="flex gap-3">
+              <div className="flex flex-wrap gap-3">
                 {Object.entries(siteConfig.socialLinks).map(([name, url]) => (
                   <a
                     key={name}
@@ -85,7 +75,6 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Bottom bar */}
           <div className="mt-10 border-t border-border/50 pt-6">
             <div className="flex flex-col items-center justify-between gap-3 text-center text-xs text-muted-foreground sm:flex-row sm:text-left">
               <p>{tFooter("copyright", { year: currentYear })}</p>

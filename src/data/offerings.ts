@@ -110,32 +110,32 @@ function t(locale: AppLocale, value: LocalizedString) {
 export function getWeddingOfferings(locale: AppLocale): WeddingOfferings {
   const placeholderLabels = {
     hero: t(locale, {
-      id: "Tambahkan Foto Hero",
-      en: "Add Hero Image",
+      id: "Mahana Signature",
+      en: "Mahana Signature",
     }),
     package: t(locale, {
-      id: "Tambahkan Foto Paket",
-      en: "Add Package Image",
+      id: "Detail Paket",
+      en: "Package Detail",
     }),
     decoration: t(locale, {
-      id: "Tambahkan Foto Dekorasi",
-      en: "Add Decoration Image",
+      id: "Arah Dekorasi",
+      en: "Decor Direction",
     }),
     portfolio: t(locale, {
-      id: "",
-      en: "",
+      id: "Cerita Perayaan",
+      en: "Celebration Story",
     }),
     couple: t(locale, {
-      id: "Tambahkan Foto Pasangan",
-      en: "Add Couple Photo",
+      id: "Cerita Pasangan",
+      en: "Couple Story",
     }),
     planner: t(locale, {
-      id: "Tambahkan Foto Wedding Planner",
-      en: "Add Planner Service Image",
+      id: "Pendampingan Planner",
+      en: "Planner Support",
     }),
     exclusive: t(locale, {
-      id: "Tambahkan Foto Paket Eksklusif",
-      en: "Add Exclusive Package Image",
+      id: "Paket Eksklusif",
+      en: "Exclusive Package",
     }),
   };
 
@@ -351,11 +351,11 @@ export function getWeddingOfferings(locale: AppLocale): WeddingOfferings {
         }),
         summary: t(locale, {
           id: "Layanan catering tambahan tersedia untuk kebutuhan yang ingin dibicarakan lebih detail berdasarkan menu, jumlah tamu, dan format penyajian.",
-          en: "Additional catering support is available for needs that should be discussed in more detail based on menu direction, guest count, and serving format.",
+          en: "Additional catering support is available for celebrations that need menu direction, guest-count planning, and service format discussed with more care.",
         }),
         detail: t(locale, {
-          id: "Karena detail menu dan pricing belum ditetapkan, kami menyajikannya secara jujur sebagai layanan tambahan yang dibuka melalui konsultasi agar rekomendasinya relevan dengan acara Anda.",
-          en: "Because detailed menus and pricing have not been finalized, we present it honestly as an additional service opened through consultation so any recommendation stays relevant to your event.",
+          id: "Layanan ini dibuka melalui konsultasi agar arah menu, jumlah tamu, dan format penyajian dapat disesuaikan dengan karakter acara Anda secara lebih personal.",
+          en: "This service is prepared through consultation so menu direction, guest count, and presentation style can be tailored more personally to your celebration.",
         }),
         highlights: [
           t(locale, {
@@ -367,8 +367,8 @@ export function getWeddingOfferings(locale: AppLocale): WeddingOfferings {
             en: "Can be aligned with the main package",
           }),
           t(locale, {
-            id: "Tanpa detail yang dibuat-buat",
-            en: "Presented without invented details",
+            id: "Disusun melalui konsultasi",
+            en: "Shaped through consultation",
           }),
         ],
       },
@@ -383,8 +383,8 @@ export function getWeddingOfferings(locale: AppLocale): WeddingOfferings {
         en: "On The Day Package for calm, well-structured wedding-day coordination.",
       }),
       description: t(locale, {
-        id: "Setiap pilihan dirancang untuk memudahkan perbandingan crew, kapasitas tamu, dan cakupan support dengan presentasi yang rapi dan mudah dipahami.",
-        en: "Each option is designed to make crew count, guest capacity, and support scope easy to compare through a clear, well-organized presentation.",
+        id: "Setiap pilihan disusun agar jumlah crew, kapasitas tamu, dan cakupan pendampingan mudah dibaca sejak awal.",
+        en: "Each option is arranged so crew count, guest capacity, and support scope feel easy to understand from the start.",
       }),
       cards: [
         {
@@ -520,8 +520,8 @@ export function getWeddingOfferings(locale: AppLocale): WeddingOfferings {
         en: "Wedding Planner Service is designed for couples who want closer guidance throughout the process, from decision-making through full vendor coordination on the wedding day.",
       }),
       personalizedNote: t(locale, {
-        id: "Layanan ini menonjol karena support yang terasa personal, intensif, dan selalu siap mengikuti ritme kebutuhan pasangan maupun keluarga.",
-        en: "This service stands out for support that feels personal, intensive, and responsive to the rhythm of both the couple and the family.",
+        id: "Layanan ini terasa dekat, personal, dan siap mengikuti ritme kebutuhan pasangan maupun keluarga dengan tenang.",
+        en: "This service feels close, personal, and calmly responsive to the rhythm of both the couple and the family.",
       }),
       imageSrc: "/images/packages/planner/main.png",
       featureGroups: [
@@ -783,8 +783,8 @@ export function getWeddingOfferings(locale: AppLocale): WeddingOfferings {
             }),
           ],
           note: t(locale, {
-            id: "Detail deliverables belum ditentukan oleh klien, sehingga kami menampilkannya secara jujur sebagai kategori yang termasuk dan dapat dikustomisasi sesuai kebutuhan dokumentasi Anda.",
-            en: "Detailed deliverables have not been specified yet, so we present this honestly as an included category that can be customized during consultation based on your documentation needs.",
+            id: "Format dokumentasi akan dirapikan saat konsultasi agar hasil foto dan video mengikuti rangkaian acara serta momen yang paling ingin Anda abadikan.",
+            en: "The documentation format is refined during consultation so the photo and video deliverables follow your event flow and the moments you most want preserved.",
           }),
         },
         {
@@ -822,12 +822,12 @@ export function getWeddingOfferings(locale: AppLocale): WeddingOfferings {
         en: "Additional Catering",
       }),
       title: t(locale, {
-        id: "Layanan tambahan untuk kebutuhan catering yang ingin dibicarakan lebih spesifik.",
-        en: "An additional service for catering needs that should be discussed more specifically.",
+        id: "Layanan tambahan untuk kebutuhan catering yang ingin dibahas lebih personal.",
+        en: "An additional service for catering plans that deserve a more personal discussion.",
       }),
       description: t(locale, {
-        id: "Detail menu dan pricing belum diberikan, sehingga Additional Catering ditampilkan sebagai layanan yang tersedia upon request agar rekomendasinya tetap jujur dan relevan.",
-        en: "Exact menus and pricing have not been provided, so Additional Catering is presented as an available upon-request service to keep the information honest and relevant.",
+        id: "Additional Catering dibicarakan melalui konsultasi agar arah menu, jumlah tamu, dan format penyajian selaras dengan karakter acara Anda.",
+        en: "Additional Catering is discussed through consultation so menu direction, guest count, and serving style stay aligned with the character of your celebration.",
       }),
       note: t(locale, {
         id: "Layanan ini dapat dibicarakan bersamaan dengan paket utama, kebutuhan tamu, atau preferensi keluarga saat sesi konsultasi.",
@@ -890,8 +890,8 @@ export function getWeddingOfferings(locale: AppLocale): WeddingOfferings {
           en: "Is catering available?",
         }),
         answer: t(locale, {
-          id: "Ya, Additional Catering tersedia sebagai layanan tambahan. Karena detail menu dan pricing belum ditetapkan, pembahasannya dilakukan melalui konsultasi agar usul yang diberikan sesuai kebutuhan acara Anda.",
-          en: "Yes. Additional Catering is available as an add-on service. Because menu details and pricing have not been fixed yet, we discuss it through consultation so any proposal stays aligned with your event needs.",
+          id: "Ya, Additional Catering tersedia sebagai layanan tambahan. Pembahasannya dilakukan melalui konsultasi agar arah menu, jumlah tamu, dan format penyajian sesuai dengan kebutuhan acara Anda.",
+          en: "Yes. Additional Catering is available as an add-on service. We discuss it through consultation so the menu direction, guest count, and serving format match your event needs.",
         }),
       },
       {
@@ -900,8 +900,8 @@ export function getWeddingOfferings(locale: AppLocale): WeddingOfferings {
           en: "Can the package be adjusted to our needs?",
         }),
         answer: t(locale, {
-          id: "Bisa. Struktur paket di website ini dibuat untuk memudahkan perbandingan. Setelah konsultasi, Mahana Organizer dapat membantu menyesuaikan detail support, vendor, kategori tambahan, dan kebutuhan keluarga sesuai karakter acara Anda.",
-          en: "Yes. The package structure on this website is designed to make comparison easier. After consultation, Mahana Organizer can help tailor the support details, vendor scope, extra categories, and family needs to match the character of your event.",
+          id: "Bisa. Susunan paket di website ini menjadi acuan awal yang jelas. Setelah konsultasi, Mahana Organizer dapat membantu menyesuaikan detail support, vendor, kategori tambahan, dan kebutuhan keluarga sesuai karakter acara Anda.",
+          en: "Yes. The package outline on this website gives you a clear starting point. After consultation, Mahana Organizer can help tailor the support details, vendor scope, extra categories, and family needs to match the character of your event.",
         }),
       },
     ],

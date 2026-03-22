@@ -37,7 +37,7 @@
     "social": "Sosial",
     "hours": "Jam respons: {hours}",
     "coverage": "Melayani: {areas}",
-    "copyright": "© {year} Mahana Organizer. Seluruh hak cipta dilindungi.",
+    "copyright": "Hak cipta {year} Mahana Organizer. Seluruh hak dilindungi.",
     "locale": "Bahasa aktif: {locale}"
   },
   "metadata": {
@@ -116,7 +116,7 @@
       "primaryCta": "Jadwalkan Konsultasi",
       "secondaryCta": "Mulai via WhatsApp",
       "imageLabel": "Ilustrasi suasana wedding planning Mahana Organizer",
-      "highlightTitle": "Pendampingan yang jelas sejak briefing pertama hingga last call vendor.",
+      "highlightTitle": "Pendampingan yang jelas sejak briefing pertama hingga koordinasi vendor terakhir.",
       "highlightBody": "Setiap detail dirapikan agar Anda bisa hadir penuh di momen penting tanpa harus memikirkan teknis kecil yang seharusnya dipegang tim organizer.",
       "coverageLabel": "Cakupan",
       "stats": {
@@ -135,7 +135,7 @@
           "body": "Setiap tahap disusun dengan prioritas yang realistis, timeline yang bisa diikuti, dan arahan yang mudah dipahami pasangan maupun keluarga."
         },
         "taste": {
-          "title": "Arah visual yang refined",
+          "title": "Arah visual yang berkelas",
           "body": "Kami membantu merapikan konsep agar keseluruhan acara terasa utuh, selaras dengan karakter pasangan, dan tetap elegan saat diwujudkan."
         },
         "control": {
@@ -162,7 +162,7 @@
     },
     "portfolio": {
       "eyebrow": "Portofolio",
-      "title": "Referensi perayaan yang terasa personal dan polished.",
+      "title": "Referensi perayaan yang terasa personal, rapi, dan berkelas.",
       "description": "Lihat lebih dekat bagaimana Mahana Organizer menata intimate wedding, ballroom celebration, hingga acara keluarga yang sarat tradisi.",
       "cta": "Jelajahi Portofolio"
     },
@@ -174,8 +174,8 @@
     },
     "areasSection": {
       "eyebrow": "Cakupan layanan",
-      "title": "Melayani pasangan di Jakarta, Bogor, Depok, Bekasi, dan Tangerang tanpa membuat komunikasi terasa jauh.",
-      "description": "Area layanan Mahana Organizer disebutkan secara natural dalam setiap tahap konsultasi, penjadwalan meeting, dan koordinasi venue agar proses tetap efisien."
+      "title": "Melayani pasangan di Jakarta, Bogor, Depok, Bekasi, dan Tangerang dengan pendampingan yang tetap terasa dekat.",
+      "description": "Di mana pun venue Anda berada dalam area layanan kami, proses konsultasi tetap praktis, hangat, dan mudah dikoordinasikan sejak awal."
     },
     "faq": {
       "eyebrow": "FAQ",
@@ -211,7 +211,7 @@
     "values": {
       "eyebrow": "Nilai kerja",
       "title": "Empat hal yang selalu menjadi dasar keputusan kami.",
-      "description": "Nilai ini menjaga setiap proyek tetap konsisten, mulai dari komunikasi internal hingga pengalaman tamu di venue.",
+      "description": "Nilai ini menjaga setiap perayaan tetap konsisten, dari percakapan pertama hingga pengalaman tamu di hari acara.",
       "items": {
         "clarity": {
           "title": "Kejelasan",
@@ -227,7 +227,7 @@
         },
         "craft": {
           "title": "Kehalusan detail",
-          "body": "Kami menyukai detail yang halus, visual yang refined, dan flow acara yang terasa nyaman."
+          "body": "Kami menyukai detail yang halus, visual yang berkelas, dan flow acara yang terasa nyaman."
         }
       }
     },
@@ -281,8 +281,8 @@
   "servicesPage": {
     "intro": {
       "eyebrow": "Layanan Mahana Organizer",
-      "title": "Pendampingan yang bisa dimulai dari strategi besar hingga detail hari-H.",
-      "description": "Setiap layanan kami disusun agar pasangan mendapatkan level support yang tepat, tanpa membayar lebih untuk hal yang belum dibutuhkan."
+      "title": "Pendampingan yang dapat dimulai dari arah perencanaan awal hingga detail hari-H.",
+      "description": "Setiap layanan disusun agar pasangan mendapatkan tingkat pendampingan yang sesuai dengan skala dan kompleksitas acara."
     },
     "snapshot": {
       "title": "Layanan kami paling efektif ketika pasangan membutuhkan partner yang bisa menata keputusan, bukan sekadar mengeksekusi checklist."
@@ -311,7 +311,7 @@
       "body": "Mulailah dari sesi konsultasi. Kami bisa membantu menilai apakah Anda memerlukan full planning, wedding day coordination, atau kombinasi layanan yang lebih efisien."
     },
     "coverage": {
-      "title": "Cakupan wilayah tetap kami kelola secara natural.",
+      "title": "Di mana pun venue Anda berada dalam area layanan kami, ritme persiapannya tetap terasa dekat.",
       "body": "Mahana Organizer melayani pernikahan di Jakarta, Bogor, Depok, Bekasi, dan Tangerang. Logistik venue, koordinasi vendor, dan perencanaan transportasi semuanya dibahas dalam sesi konsultasi agar setiap acara terasa dekat dan didampingi sepenuhnya."
     },
     "areasSection": {
@@ -328,12 +328,12 @@
   "packagesPage": {
     "intro": {
       "eyebrow": "Paket Mahana Organizer",
-      "title": "Rangkaian paket dan layanan Mahana Organizer untuk wedding day, planning, dan perayaan yang lebih lengkap.",
-      "description": "Halaman ini merangkum On The Day Package, Wedding Planner Service, All in Exclusive Package, dan Additional Catering secara jelas agar perbandingan awal terasa lebih mudah."
+      "title": "Rangkaian paket yang berkelas untuk wedding day, planning, dan perayaan yang lebih lengkap.",
+      "description": "Jelajahi On The Day Package, Wedding Planner Service, All in Exclusive Package, dan Additional Catering sebagai acuan awal yang jelas untuk acara Anda."
     },
     "featuredLabel": "Rekomendasi",
     "audienceLabel": "Cocok untuk",
-    "comparisonNote": "Harga tidak ditampilkan sebagai harga tetap. Paket dapat disesuaikan setelah konsultasi awal.",
+    "comparisonNote": "Harga paket disesuaikan setelah konsultasi awal agar rekomendasinya lebih tepat untuk karakter acara Anda.",
     "cards": {
       "cta": "Diskusikan Paket Ini",
       "atelier": {
@@ -366,15 +366,15 @@
       "description": "Begitu paket disepakati, kami akan memecah pekerjaan menjadi langkah-langkah yang jelas agar pasangan tidak perlu menebak prioritas berikutnya.",
       "items": {
         "brief": {
-          "title": "Initial brief",
+          "title": "Brief awal",
           "body": "Menyamakan ekspektasi, timeline acara, dan level pendampingan yang dibutuhkan."
         },
         "mapping": {
-          "title": "Planning map",
+          "title": "Peta kerja",
           "body": "Membuat peta kerja yang mencakup vendor, konsep, keluarga inti, serta titik koordinasi penting."
         },
         "execution": {
-          "title": "Execution rhythm",
+          "title": "Ritme pelaksanaan",
           "body": "Menjaga ritme follow-up agar seluruh pihak siap saat memasuki minggu terakhir dan hari-H."
         }
       }
@@ -526,7 +526,7 @@
     },
     "response": {
       "eyebrow": "Yang bisa Anda harapkan",
-      "title": "Respons kami dirancang ringkas, jelas, dan tidak membuat Anda menunggu tanpa arah.",
+      "title": "Anda dapat mengharapkan respons yang jelas, hangat, dan mudah diikuti.",
       "description": "Setelah menerima inquiry, kami biasanya meninjau kebutuhan terlebih dahulu lalu memberi arahan tahap awal yang paling relevan.",
       "items": {
         "review": {
@@ -545,8 +545,8 @@
     },
     "areasSection": {
       "eyebrow": "Area layanan",
-      "title": "Jakarta, Bogor, Depok, Bekasi, dan Tangerang tetap kami tangani dalam satu ritme komunikasi yang sama.",
-      "description": "Seluruh area layanan dibahas langsung saat inquiry dan perencanaan venue agar Anda selalu merasa didampingi, di mana pun lokasi acara."
+      "title": "Jakarta, Bogor, Depok, Bekasi, dan Tangerang kami tangani dalam satu ritme komunikasi yang tenang.",
+      "description": "Sejak inquiry pertama hingga koordinasi venue, Anda tetap merasakan pendampingan yang dekat di mana pun lokasi acara."
     },
     "faq": {
       "eyebrow": "Pertanyaan singkat",
@@ -564,10 +564,10 @@
       "message": "Ceritakan kebutuhan Anda"
     },
     "placeholders": {
-      "name": "Contoh: Adelia Putri",
+      "name": "Adelia Putri",
       "email": "nama@email.com",
-      "phone": "Contoh: 0812 3456 7890",
-      "eventLocation": "Contoh: Jakarta Selatan",
+      "phone": "0812 3456 7890",
+      "eventLocation": "Jakarta Selatan",
       "message": "Tuliskan gambaran acara, jumlah tamu, vendor yang sudah dipilih, atau pertanyaan utama Anda."
     },
     "submit": "Kirim Inquiry",
@@ -645,7 +645,7 @@
     "items": {
       "coverage": {
         "question": "Apakah Mahana Organizer melayani Jakarta, Bogor, Depok, Bekasi, dan Tangerang?",
-        "answer": "Ya. Saat ini kami fokus melayani pasangan di Jakarta, Bogor, Depok, Bekasi, dan Tangerang. Cakupan tersebut akan dibahas langsung saat konsultasi agar penyesuaian venue, site visit, dan jadwal meeting lebih efisien."
+        "answer": "Ya. Kami melayani pasangan di Jakarta, Bogor, Depok, Bekasi, dan Tangerang. Saat konsultasi, detail venue, site visit, dan jadwal meeting akan diselaraskan agar proses persiapan tetap efisien."
       },
       "consultation": {
         "question": "Apa yang perlu disiapkan sebelum konsultasi pertama?",

@@ -11,11 +11,13 @@ import { cn } from "@/lib/utils";
 type LanguageSwitcherProps = {
   className?: string;
   compact?: boolean;
+  onSelect?: () => void;
 };
 
 export function LanguageSwitcher({
   className,
   compact = false,
+  onSelect,
 }: LanguageSwitcherProps) {
   const t = useTranslations("localeSwitcher");
   const locale = useLocale() as AppLocale;
@@ -29,6 +31,7 @@ export function LanguageSwitcher({
     }
 
     startTransition(() => {
+      onSelect?.();
       router.replace(pathname, { locale: nextLocale });
     });
   }
@@ -38,9 +41,11 @@ export function LanguageSwitcher({
       className={cn(
         "inline-flex items-center gap-1 rounded-full border border-border-strong/60 bg-white/78 p-1 text-sm shadow-[0_10px_24px_rgba(80,59,43,0.08)] backdrop-blur-xl",
         compact && "text-xs",
+        isPending && "opacity-80",
         className,
       )}
       aria-label={t("label")}
+      aria-busy={isPending}
     >
       {(Object.keys(localeLabels) as AppLocale[]).map((value) => {
         const active = value === locale;

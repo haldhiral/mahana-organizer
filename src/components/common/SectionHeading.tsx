@@ -18,7 +18,7 @@ export function SectionHeading({
   return (
     <div
       className={cn(
-        "max-w-3xl",
+        "max-w-[44rem]",
         align === "center" && "mx-auto text-center",
         className,
       )}
@@ -31,15 +31,19 @@ export function SectionHeading({
           <span className="gold-divider mb-5 inline-block" aria-hidden="true" />
         </>
       ) : null}
-      <h2 className="font-serif text-[2.45rem] leading-[1.06] text-balance text-foreground sm:text-[3rem] lg:text-[3.3rem]">
+      <h2 className="font-serif text-[2.15rem] leading-[1.06] text-balance text-foreground sm:text-[2.7rem] lg:text-[3.2rem]">
         {title}
       </h2>
       {description ? (
-        <p className={cn("mt-5 text-base leading-8 text-muted-foreground sm:text-lg", align === "center" ? "mx-auto max-w-2xl" : "max-w-2xl")}>
+        <p
+          className={cn(
+            "mt-5 max-w-[40rem] text-[0.98rem] leading-8 text-muted-foreground sm:text-lg",
+            align === "center" && "mx-auto",
+          )}
+        >
           {description}
         </p>
       ) : null}
     </div>
   );
 }
-

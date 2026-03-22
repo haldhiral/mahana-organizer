@@ -105,8 +105,8 @@ export function ContactForm() {
       className="rounded-[2.2rem]"
       noValidate
     >
-      <PremiumSectionShell className="rounded-[2.2rem] p-6 sm:p-8">
-        <div className="grid gap-6 md:grid-cols-2">
+      <PremiumSectionShell className="rounded-[2.2rem] p-5 sm:p-8">
+        <div className="grid gap-5 md:grid-cols-2 md:gap-6">
           <Field
             field="name"
             label={t("labels.name")}
@@ -142,7 +142,7 @@ export function ContactForm() {
           />
         </div>
 
-        <div className="mt-6 grid gap-6">
+        <div className="mt-5 grid gap-5 sm:mt-6 sm:gap-6">
           <Field
             field="eventLocation"
             label={t("labels.eventLocation")}
@@ -162,7 +162,7 @@ export function ContactForm() {
           />
         </div>
 
-        <div className="mt-8">
+        <div className="mt-7 sm:mt-8">
           <span className="gold-divider mb-6 block" aria-hidden="true" />
           <Button type="submit" size="lg" disabled={status === "loading"} fullWidth>
             {status === "loading" ? t("submitting") : t("submit")}
@@ -229,14 +229,16 @@ function Field({
     "aria-invalid": Boolean(error),
     "aria-describedby": error ? `${field}-error` : undefined,
     className:
-      "w-full rounded-[1.5rem] border border-border-strong/60 bg-white/80 px-5 py-4 text-foreground shadow-[0_10px_24px_rgba(80,59,43,0.04)] outline-none transition-all duration-250 focus:border-primary/70 focus:bg-white focus:shadow-[0_18px_38px_rgba(80,59,43,0.1)] focus:ring-1 focus:ring-primary/20",
+      "w-full rounded-[1.45rem] border border-border-strong/60 bg-white/80 px-5 py-4 text-foreground shadow-[0_10px_24px_rgba(80,59,43,0.04)] outline-none transition-all duration-250 focus:border-primary/70 focus:bg-white focus:shadow-[0_18px_38px_rgba(80,59,43,0.1)] focus:ring-1 focus:ring-primary/20",
     onChange: (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
       onChange(field, event.target.value),
   };
 
   return (
     <label className="block">
-      <span className="mb-2.5 block text-sm font-semibold uppercase tracking-[0.1em] text-foreground/80">{label}</span>
+      <span className="mb-2.5 block text-sm font-semibold uppercase tracking-[0.1em] text-foreground/80">
+        {label}
+      </span>
       {multiline ? (
         <textarea {...sharedProps} rows={6} />
       ) : (
@@ -246,4 +248,3 @@ function Field({
     </label>
   );
 }
-

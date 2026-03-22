@@ -58,6 +58,7 @@ function PackagesPageContent({ locale }: { locale: AppLocale }) {
   const offerings = getWeddingOfferings(locale);
   const tPage = useTranslations("packagesPage");
   const tNav = useTranslations("nav");
+  const featuredLabel = tPage("featuredLabel");
 
   const breadcrumbItems: BreadcrumbItem[] = [
     { name: tNav("home"), pathname: "/" },
@@ -101,15 +102,29 @@ function PackagesPageContent({ locale }: { locale: AppLocale }) {
             title={offerings.onTheDay.title}
             description={offerings.onTheDay.description}
           />
-          <div className="mt-10 grid gap-5 lg:grid-cols-3">
+          <PremiumSectionShell tone="champagne" className="mt-8 rounded-[2rem] p-5 sm:p-6">
+            <p className="eyebrow-label mb-4">{tPage("customization.eyebrow")}</p>
+            <p className="max-w-3xl text-sm leading-7 text-muted-foreground sm:text-base">
+              {tPage("comparisonNote")}
+            </p>
+          </PremiumSectionShell>
+          <div className="mt-8 grid gap-4 lg:grid-cols-3 lg:gap-5">
             {offerings.onTheDay.cards.map((card, index) => (
               <PremiumSectionShell
                 key={card.id}
                 tone={card.featured ? "rose" : "soft"}
-                className="panel-hover flex h-full flex-col rounded-[2.2rem] p-6"
+                className="panel-hover flex h-full flex-col rounded-[2.2rem] p-5 sm:p-6"
               >
                 <div className="flex items-start justify-between gap-4">
-                  <Badge>{card.name}</Badge>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <Badge>{card.name}</Badge>
+                    {card.featured ? (
+                      <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-primary">
+                        <span className="h-1 w-1 rounded-full bg-primary" />
+                        {featuredLabel}
+                      </span>
+                    ) : null}
+                  </div>
                   <p className="text-sm font-semibold text-foreground/82">{card.price}</p>
                 </div>
 
@@ -160,7 +175,7 @@ function PackagesPageContent({ locale }: { locale: AppLocale }) {
 
       <section className="section-pad">
         <Container>
-          <div className="grid gap-6 lg:grid-cols-[0.76fr_1.24fr] lg:items-start">
+          <div className="grid gap-5 lg:grid-cols-[0.76fr_1.24fr] lg:items-start lg:gap-6">
             <ElegantImagePlaceholder
               alt={offerings.planner.title}
               src={offerings.planner.imageSrc}
@@ -183,7 +198,7 @@ function PackagesPageContent({ locale }: { locale: AppLocale }) {
                 <Badge>{offerings.planner.supportWindow}</Badge>
               </div>
 
-              <div className="mt-8 grid gap-5 xl:grid-cols-2">
+              <div className="mt-8 grid gap-4 xl:grid-cols-2 xl:gap-5">
                 {offerings.planner.featureGroups.map((group) => (
                   <div
                     key={group.title}
@@ -222,7 +237,7 @@ function PackagesPageContent({ locale }: { locale: AppLocale }) {
       <section className="section-pad">
         <Container>
           <PremiumSectionShell tone="soft" className="rounded-[2.8rem] p-6 sm:p-8 lg:p-10">
-            <div className="grid gap-8 lg:grid-cols-[0.78fr_1.22fr]">
+            <div className="grid gap-6 lg:grid-cols-[0.78fr_1.22fr] lg:gap-8">
               <div>
                 <SectionHeading
                   eyebrow={offerings.exclusive.eyebrow}
@@ -254,7 +269,7 @@ function PackagesPageContent({ locale }: { locale: AppLocale }) {
                     className="rounded-[1.9rem] border border-border/70 bg-white/72 p-5 transition-colors duration-200 open:bg-white/50"
                   >
                     <summary className="flex cursor-pointer list-none items-center justify-between gap-4">
-                      <span className="font-serif text-[1.7rem] leading-tight text-foreground">
+                      <span className="font-serif text-[1.55rem] leading-tight text-foreground sm:text-[1.7rem]">
                         {section.title}
                       </span>
                       <span className="accordion-icon shrink-0">+</span>
@@ -318,10 +333,10 @@ function PackagesPageContent({ locale }: { locale: AppLocale }) {
                 {offerings.catering.note}
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <Link href="/contact" className={buttonStyles()}>
+                <Link href="/contact" className={buttonStyles({ className: "w-full sm:w-auto" })}>
                   {offerings.catering.ctaLabel}
                 </Link>
-                <WhatsAppButton variant="outline" />
+                <WhatsAppButton variant="outline" className="w-full sm:w-auto" />
               </div>
             </PremiumSectionShell>
           </div>

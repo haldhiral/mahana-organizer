@@ -25,7 +25,7 @@ export function PremiumSectionShell({
   return (
     <div
       className={cn(
-        "section-shell rounded-[2.5rem] p-6 sm:p-8 lg:p-10",
+        "section-shell rounded-[2.25rem] p-6 sm:p-8 lg:p-10",
         toneClasses[tone],
         className,
       )}
@@ -34,4 +34,3 @@ export function PremiumSectionShell({
     </div>
   );
 }
-

@@ -80,7 +80,7 @@ function ContactPageContent({ locale }: { locale: AppLocale }) {
         title={t("intro.title")}
         description={t("intro.description")}
         aside={
-          <PremiumSectionShell tone="rose" className="rounded-[2rem] p-6">
+          <PremiumSectionShell tone="rose" className="rounded-[2rem] p-5 sm:p-6">
             <p className="font-serif text-2xl text-foreground">
               {t("touchpoints.whatsapp.title")}
             </p>
@@ -96,12 +96,12 @@ function ContactPageContent({ locale }: { locale: AppLocale }) {
 
       <section className="section-pad pt-0">
         <Container>
-          <div className="mb-8 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+          <div className="mb-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4 xl:gap-5">
             {["whatsapp", "email", "hours", "coverage"].map((item, index) => (
               <PremiumSectionShell
                 key={item}
                 tone={index === 0 ? "rose" : "soft"}
-                className="panel-hover rounded-[2rem] p-6"
+                className="panel-hover rounded-[2rem] p-5 sm:p-6"
               >
                 <h2 className="font-serif text-2xl text-foreground">
                   {t(`touchpoints.${item}.title`)}
@@ -126,8 +126,8 @@ function ContactPageContent({ locale }: { locale: AppLocale }) {
             ))}
           </div>
 
-          <div className="grid gap-8 lg:grid-cols-[0.86fr_1.14fr] lg:items-start">
-            <PremiumSectionShell tone="soft" className="rounded-[2.2rem] p-6 sm:p-8">
+          <div className="grid gap-6 lg:grid-cols-[0.86fr_1.14fr] lg:items-start lg:gap-8">
+            <PremiumSectionShell tone="soft" className="rounded-[2.2rem] p-5 sm:p-8">
               <p className="eyebrow-label mb-4">{t("form.eyebrow")}</p>
               <h2 className="font-serif text-[2rem] leading-tight text-foreground">
                 {t("form.title")}
@@ -152,7 +152,7 @@ function ContactPageContent({ locale }: { locale: AppLocale }) {
 
       <section className="section-pad">
         <Container>
-          <PremiumSectionShell tone="rose" className="rounded-[2.4rem] p-6 sm:p-8">
+          <PremiumSectionShell tone="rose" className="rounded-[2.4rem] p-5 sm:p-8">
             <p className="eyebrow-label mb-4">{t("response.eyebrow")}</p>
             <h2 className="font-serif text-[2.35rem] leading-tight text-balance text-foreground">
               {t("response.title")}
@@ -160,7 +160,7 @@ function ContactPageContent({ locale }: { locale: AppLocale }) {
             <p className="mt-4 max-w-3xl text-base leading-8 text-muted-foreground">
               {t("response.description")}
             </p>
-            <div className="mt-8 grid gap-5 md:grid-cols-3">
+            <div className="mt-8 grid gap-4 md:grid-cols-3 lg:gap-5">
               {["review", "followUp", "consultation"].map((item) => (
                 <div
                   key={item}

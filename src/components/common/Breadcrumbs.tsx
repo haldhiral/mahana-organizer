@@ -6,21 +6,33 @@ type BreadcrumbsProps = {
 
 export function Breadcrumbs({ items }: BreadcrumbsProps) {
   return (
-    <nav aria-label="Breadcrumb" className="mb-6 text-sm text-muted-foreground">
-      <ol className="flex flex-wrap items-center gap-2">
+    <nav aria-label="Breadcrumb" className="mb-5 text-sm text-muted-foreground">
+      <ol className="flex flex-wrap items-center gap-2.5">
         {items.map((item, index) => {
           const isCurrentPage = index === items.length - 1;
 
           return (
             <li key={`${item.href}-${item.label}`} className="flex items-center gap-2">
               {isCurrentPage ? (
-                <span aria-current="page">{item.label}</span>
+                <span
+                  aria-current="page"
+                  className="rounded-full border border-border/60 bg-white/55 px-3 py-1 text-foreground/78"
+                >
+                  {item.label}
+                </span>
               ) : (
-                <Link href={item.href} className="transition-colors hover:text-primary">
+                <Link
+                  href={item.href}
+                  className="rounded-full border border-transparent px-3 py-1 transition-colors hover:border-border/60 hover:bg-white/55 hover:text-primary"
+                >
                   {item.label}
                 </Link>
               )}
-              {!isCurrentPage ? <span className="text-border-strong" aria-hidden="true">›</span> : null}
+              {!isCurrentPage ? (
+                <span className="text-border-strong" aria-hidden="true">
+                  /
+                </span>
+              ) : null}
             </li>
           );
         })}
@@ -28,4 +40,3 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
     </nav>
   );
 }
-

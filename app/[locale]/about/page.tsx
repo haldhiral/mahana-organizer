@@ -85,8 +85,8 @@ function AboutPageContent({ locale }: { locale: AppLocale }) {
 
       <section className="section-pad pt-0">
         <Container>
-          <div className="grid gap-5 lg:grid-cols-[1.1fr_0.9fr]">
-            <PremiumSectionShell className="rounded-[2.3rem] p-6 sm:p-8">
+          <div className="grid gap-4 lg:grid-cols-[1.1fr_0.9fr] lg:gap-5">
+            <PremiumSectionShell className="rounded-[2.3rem] p-5 sm:p-8">
               <p className="eyebrow-label mb-4">{t("story.eyebrow")}</p>
               <h2 className="font-serif text-[2.25rem] leading-tight text-foreground sm:text-[2.7rem]">
                 {t("story.title")}
@@ -99,8 +99,8 @@ function AboutPageContent({ locale }: { locale: AppLocale }) {
               </p>
             </PremiumSectionShell>
 
-            <div className="grid gap-5">
-              <PremiumSectionShell tone="rose" className="rounded-[2rem] p-6 sm:p-8">
+            <div className="grid gap-4 lg:gap-5">
+              <PremiumSectionShell tone="rose" className="rounded-[2rem] p-5 sm:p-8">
                 <p className="font-serif text-[2rem] leading-tight text-foreground">
                   {t("mission.title")}
                 </p>
@@ -108,7 +108,7 @@ function AboutPageContent({ locale }: { locale: AppLocale }) {
                   {t("mission.body")}
                 </p>
               </PremiumSectionShell>
-              <PremiumSectionShell className="rounded-[2rem] p-6 sm:p-8">
+              <PremiumSectionShell className="rounded-[2rem] p-5 sm:p-8">
                 <p className="font-serif text-[2rem] leading-tight text-foreground">
                   {t("approach.title")}
                 </p>
@@ -128,12 +128,12 @@ function AboutPageContent({ locale }: { locale: AppLocale }) {
             title={t("values.title")}
             description={t("values.description")}
           />
-          <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-4 xl:gap-5">
             {["clarity", "care", "composure", "craft"].map((item, index) => (
               <PremiumSectionShell
                 key={item}
                 tone={index === 1 ? "rose" : "soft"}
-                className="panel-hover rounded-[2rem] p-6"
+                className="panel-hover rounded-[2rem] p-5 sm:p-6"
               >
                 <h3 className="font-serif text-2xl text-foreground">
                   {t(`values.items.${item}.title`)}
@@ -154,12 +154,12 @@ function AboutPageContent({ locale }: { locale: AppLocale }) {
             title={t("trust.title")}
             description={t("trust.description")}
           />
-          <div className="mt-10 grid gap-5 md:grid-cols-3">
+          <div className="mt-10 grid gap-4 md:grid-cols-3 lg:gap-5">
             {["communication", "vendor", "onsite"].map((item, index) => (
               <PremiumSectionShell
                 key={item}
                 tone={index === 1 ? "rose" : "soft"}
-                className="panel-hover rounded-[2rem] p-6"
+                className="panel-hover rounded-[2rem] p-5 sm:p-6"
               >
                 <h3 className="font-serif text-2xl text-foreground">
                   {t(`trust.items.${item}.title`)}
@@ -180,12 +180,12 @@ function AboutPageContent({ locale }: { locale: AppLocale }) {
             title={t("team.title")}
             description={t("team.description")}
           />
-          <div className="mt-10 grid gap-5 lg:grid-cols-3">
+          <div className="mt-10 grid gap-4 lg:grid-cols-3 lg:gap-5">
             {["leadPlanner", "coordinationLead", "guestExperience"].map((item, index) => (
               <PremiumSectionShell
                 key={item}
                 tone={index === 1 ? "rose" : "soft"}
-                className="panel-hover rounded-[2rem] p-6"
+                className="panel-hover rounded-[2rem] p-5 sm:p-6"
               >
                 <p className="text-xs font-semibold uppercase tracking-[0.24em] text-primary">
                   {t(`team.items.${item}.role`)}

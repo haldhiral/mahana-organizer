@@ -87,7 +87,7 @@ function ServicesPageContent({ locale }: { locale: AppLocale }) {
         title={t("intro.title")}
         description={t("intro.description")}
         aside={
-          <PremiumSectionShell tone="rose" className="rounded-[2rem] p-6">
+          <PremiumSectionShell tone="rose" className="rounded-[2rem] p-5 sm:p-6">
             <p className="font-serif text-[2rem] leading-tight text-foreground">
               {t("snapshot.title")}
             </p>
@@ -103,8 +103,8 @@ function ServicesPageContent({ locale }: { locale: AppLocale }) {
 
       <section className="section-pad">
         <Container>
-          <div className="grid gap-5 lg:grid-cols-[0.86fr_1.14fr]">
-            <PremiumSectionShell tone="soft" className="rounded-[2rem] p-6 sm:p-8">
+          <div className="grid gap-4 lg:grid-cols-[0.86fr_1.14fr] lg:gap-5">
+            <PremiumSectionShell tone="soft" className="rounded-[2rem] p-5 sm:p-8">
               <p className="eyebrow-label mb-4">{t("consultation.title")}</p>
               <p className="font-serif text-[2rem] leading-tight text-foreground">
                 {t("coverage.title")}
@@ -118,7 +118,10 @@ function ServicesPageContent({ locale }: { locale: AppLocale }) {
                 ))}
               </div>
               <div className="mt-8">
-                <Link href="/packages" className={buttonStyles()}>
+                <Link
+                  href="/packages"
+                  className={buttonStyles({ className: "w-full sm:w-auto" })}
+                >
                   {locale === "id" ? "Lihat detail paket" : "View package details"}
                 </Link>
               </div>
@@ -130,12 +133,12 @@ function ServicesPageContent({ locale }: { locale: AppLocale }) {
                 title={t("process.title")}
                 description={t("process.description")}
               />
-              <div className="mt-8 grid gap-5 md:grid-cols-3">
+              <div className="mt-8 grid gap-4 md:grid-cols-3 lg:gap-5">
                 {["discover", "structure", "deliver"].map((item, index) => (
                   <PremiumSectionShell
                     key={item}
                     tone={index === 1 ? "rose" : "soft"}
-                    className="panel-hover rounded-[2rem] p-6"
+                    className="panel-hover rounded-[2rem] p-5 sm:p-6"
                   >
                     <h3 className="font-serif text-2xl text-foreground">
                       {t(`process.items.${item}.title`)}
@@ -153,13 +156,13 @@ function ServicesPageContent({ locale }: { locale: AppLocale }) {
 
       <section className="section-pad">
         <Container>
-          <PremiumSectionShell tone="rose" className="rounded-[2.4rem] p-6 sm:p-8">
+          <PremiumSectionShell tone="rose" className="rounded-[2.4rem] p-5 sm:p-8">
             <SectionHeading
               eyebrow={locale === "id" ? "Ringkasan layanan" : "Service snapshot"}
               title={t("consultation.title")}
               description={t("consultation.body")}
             />
-            <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+            <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4 xl:gap-5">
               {offerings.serviceSummaries.map((item) => (
                 <div
                   key={item.id}

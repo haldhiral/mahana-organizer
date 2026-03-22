@@ -24,13 +24,13 @@ export function PackageCards({ preview = false, className }: PackageCardsProps) 
     locale === "id" ? "Diskusikan paket ini" : "Discuss this package";
 
   return (
-    <div className={cn("grid gap-5 lg:grid-cols-3", className)}>
+    <div className={cn("grid gap-4 lg:grid-cols-3 lg:gap-5", className)}>
       {offerings.packagePreviews.map((plan, index) => (
         <PremiumSectionShell
           key={plan.id}
           tone={plan.featured ? "rose" : index === 0 ? "soft" : "champagne"}
           className={cn(
-            "panel-hover relative flex h-full flex-col rounded-[2.2rem] p-6 transition-shadow duration-300 hover:shadow-[0_24px_52px_rgba(80,59,43,0.14)]",
+            "panel-hover relative flex h-full flex-col rounded-[2.2rem] p-5 transition-shadow duration-300 hover:shadow-[0_24px_52px_rgba(80,59,43,0.14)] sm:p-6",
             plan.featured && "ring-1 ring-primary/20 shadow-[0_20px_48px_rgba(80,59,43,0.10)]",
           )}
         >
@@ -44,7 +44,7 @@ export function PackageCards({ preview = false, className }: PackageCardsProps) 
             ) : null}
           </div>
 
-          <h3 className="mt-5 font-serif text-[2rem] leading-tight text-foreground">
+          <h3 className="mt-5 font-serif text-[1.85rem] leading-tight text-foreground sm:text-[2rem]">
             {plan.title}
           </h3>
           <p className="mt-3 font-serif text-lg font-medium tracking-tight text-foreground/85">
@@ -54,7 +54,7 @@ export function PackageCards({ preview = false, className }: PackageCardsProps) 
             {plan.summary}
           </p>
 
-          <ul className="mt-5 flex-1 grid gap-3 text-sm leading-6 text-foreground/82">
+          <ul className="mt-5 grid flex-1 gap-3 text-sm leading-6 text-foreground/82">
             {plan.highlights.slice(0, preview ? 3 : undefined).map((item) => (
               <li key={item} className="flex items-start gap-3">
                 <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />

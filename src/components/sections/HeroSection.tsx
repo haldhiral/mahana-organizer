@@ -17,32 +17,40 @@ export function HeroSection() {
   const t = useTranslations("home.hero");
 
   return (
-    <section className="page-pad overflow-hidden pb-16 pt-32 sm:pb-22">
+    <section className="page-pad overflow-hidden pb-14 sm:pb-20">
       <Container>
         <PremiumSectionShell
           tone="soft"
-          className="hero-mesh overflow-hidden rounded-[3rem] px-6 py-8 sm:px-8 sm:py-10 lg:px-12 lg:py-14"
+          className="hero-mesh overflow-hidden rounded-[3rem] px-5 py-6 sm:px-8 sm:py-8 lg:px-12 lg:py-12"
         >
-          <div className="grid gap-10 lg:grid-cols-[1.04fr_0.96fr] lg:items-center">
+          <div className="grid gap-8 lg:grid-cols-[1.04fr_0.96fr] lg:items-center lg:gap-10">
             <div className="animate-fade-up">
-              <Badge className="mb-5">{t("eyebrow")}</Badge>
-              <h1 className="font-serif text-[2.6rem] leading-[0.96] tracking-[-0.01em] text-balance text-foreground sm:text-[4.2rem] lg:text-[5.2rem]">
+              <Badge className="mb-4">{t("eyebrow")}</Badge>
+              <h1 className="font-serif text-[2.35rem] leading-[0.96] tracking-[-0.01em] text-balance text-foreground sm:text-[4rem] lg:text-[5rem]">
                 {t("title")}
               </h1>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-muted-foreground sm:text-xl">
+              <p className="mt-5 max-w-2xl text-[1.02rem] leading-8 text-muted-foreground sm:text-xl">
                 {t("description", {
                   areas: siteConfig.serviceAreas.join(", "),
                 })}
               </p>
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4">
-                <Link href="/contact" className={buttonStyles({ size: "lg" })}>
+                <Link
+                  href="/contact"
+                  className={buttonStyles({ size: "lg", className: "w-full sm:w-auto" })}
+                >
                   {t("primaryCta")}
                 </Link>
-                <WhatsAppButton label={t("secondaryCta")} variant="outline" size="lg" />
+                <WhatsAppButton
+                  label={t("secondaryCta")}
+                  variant="outline"
+                  size="lg"
+                  className="w-full sm:w-auto"
+                />
               </div>
 
-              <div className="relative mt-8 overflow-hidden rounded-[1.8rem] border border-white/70 bg-white/72 p-5 shadow-[0_18px_40px_rgba(80,59,43,0.08)]">
+              <div className="relative mt-8 overflow-hidden rounded-[1.8rem] border border-white/70 bg-white/72 p-5 shadow-[0_18px_40px_rgba(80,59,43,0.08)] sm:p-6">
                 <div className="absolute -right-6 -top-6 h-20 w-20 rounded-full bg-champagne/20 blur-2xl" />
                 <p className="font-serif text-2xl leading-tight text-foreground">
                   {t("highlightTitle")}
@@ -56,9 +64,9 @@ export function HeroSection() {
                 {["planning", "coordination", "coverage"].map((item) => (
                   <div
                     key={item}
-                    className="glass-panel rounded-[1.5rem] border border-white/60 px-4 py-4 text-center text-sm leading-6 text-foreground/82"
+                    className="glass-panel rounded-[1.5rem] border border-white/60 px-4 py-4 text-left text-sm leading-6 text-foreground/82 sm:text-center"
                   >
-                    <span className="mb-1 block text-xs text-primary/60">◆</span>
+                    <span className="mb-2 block h-1.5 w-1.5 rounded-full bg-primary/70 sm:mx-auto" />
                     {t(`stats.${item}`)}
                   </div>
                 ))}
@@ -66,7 +74,7 @@ export function HeroSection() {
             </div>
 
             <div className="animate-fade-up [animation-delay:150ms] lg:justify-self-end">
-              <div className="grid gap-4 lg:grid-cols-[1.04fr_0.96fr]">
+              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-[1.04fr_0.96fr]">
                 <ElegantImagePlaceholder
                   alt={t("imageLabel")}
                   src={offerings.images.hero}
@@ -81,7 +89,7 @@ export function HeroSection() {
                   {offerings.packagePreviews.slice(0, 2).map((preview) => (
                     <div
                       key={preview.id}
-                      className="luxury-card rounded-[1.8rem] p-5 transition-shadow duration-300 hover:shadow-[0_20px_44px_rgba(80,59,43,0.12)]"
+                      className="luxury-card rounded-[1.8rem] p-5 transition-shadow duration-300 hover:shadow-[0_20px_44px_rgba(80,59,43,0.12)] sm:p-6"
                     >
                       <p className="text-xs font-semibold uppercase tracking-[0.24em] text-primary">
                         {preview.badge}
@@ -102,8 +110,8 @@ export function HeroSection() {
                   <p className="text-xs font-semibold uppercase tracking-[0.24em] text-primary">
                     {t("coverageLabel")}
                   </p>
-                  <p className="mt-3 font-serif text-[1.7rem] leading-tight text-foreground">
-                    {siteConfig.serviceAreas.join(" · ")}
+                  <p className="mt-3 font-serif text-[1.55rem] leading-tight text-foreground sm:text-[1.7rem]">
+                    {siteConfig.serviceAreas.join(" / ")}
                   </p>
                   <ul className="mt-4 grid gap-3 text-sm leading-6 text-muted-foreground">
                     {offerings.packagePreviews.map((preview) => (

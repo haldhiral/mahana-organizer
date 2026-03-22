@@ -37,7 +37,7 @@ export function PortfolioGrid() {
             type="button"
             onClick={() => startTransition(() => setActiveFilter(filter))}
             className={cn(
-              "rounded-full border px-4 py-2 text-sm font-semibold uppercase tracking-[0.16em] transition-all duration-300 ease-out",
+              "rounded-full border px-4 py-2 text-[0.78rem] font-semibold uppercase tracking-[0.16em] transition-all duration-300 ease-out sm:text-sm",
               activeFilter === filter
                 ? "scale-[1.02] border-foreground bg-foreground text-white shadow-[0_14px_28px_rgba(36,27,23,0.16)]"
                 : "border-border-strong bg-white/72 text-foreground/80 hover:bg-white hover:text-foreground hover:shadow-[0_8px_18px_rgba(80,59,43,0.08)]",
@@ -48,7 +48,7 @@ export function PortfolioGrid() {
         ))}
       </div>
 
-      <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+      <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3 xl:gap-6">
         {filteredEntries.map((entry, index) => (
           <article
             key={entry.id}
@@ -63,7 +63,7 @@ export function PortfolioGrid() {
               ratio={index % 3 === 0 ? "portrait" : "landscape"}
               className="rounded-none border-0 bg-transparent p-4 shadow-none"
             />
-            <div className="px-6 pb-6">
+            <div className="px-5 pb-5 sm:px-6 sm:pb-6">
               <p className="text-xs font-semibold uppercase tracking-[0.28em] text-primary">
                 {tPage(`entries.${entry.id}.type`)}
               </p>

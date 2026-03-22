@@ -28,14 +28,14 @@ export function TestimonialCards({
     .slice(0, limit);
 
   return (
-    <div className={cn("grid gap-5 lg:grid-cols-2", className)}>
+    <div className={cn("grid gap-4 lg:grid-cols-2 lg:gap-5", className)}>
       {items.map((item, index) => (
         <PremiumSectionShell
           key={item.id}
           tone={index % 2 === 0 ? "soft" : "rose"}
-          className="panel-hover flex h-full flex-col rounded-[2rem] p-6 sm:p-8"
+          className="panel-hover flex h-full flex-col rounded-[2rem] p-5 sm:p-7"
         >
-          <div className="flex items-start gap-5">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:gap-5">
             <ElegantImagePlaceholder
               alt={tPage(`items.${item.id}.name`)}
               src={item.image}
@@ -60,7 +60,7 @@ export function TestimonialCards({
 
           <div className="mt-6 flex-1">
             <span className="quote-mark" aria-hidden="true">&ldquo;</span>
-            <blockquote className="-mt-4 font-serif text-[1.6rem] leading-[1.28] text-foreground sm:text-[1.75rem]">
+            <blockquote className="-mt-4 font-serif text-[1.45rem] leading-[1.32] text-foreground sm:text-[1.7rem]">
               {tPage(`items.${item.id}.quote`)}
             </blockquote>
           </div>
@@ -71,4 +71,3 @@ export function TestimonialCards({
     </div>
   );
 }
-

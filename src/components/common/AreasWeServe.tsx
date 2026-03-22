@@ -25,20 +25,18 @@ export function AreasWeServe({
     <section className="section-pad">
       <Container>
         <SectionHeading eyebrow={eyebrow} title={title} description={description} />
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:gap-5 xl:grid-cols-3 2xl:grid-cols-5">
           {areaKeys.map((areaKey, index) => (
             <PremiumSectionShell
               key={areaKey}
               tone={index === 1 || index === 3 ? "rose" : "soft"}
-              className="panel-hover h-full rounded-[2rem] p-6"
+              className="panel-hover h-full rounded-[2rem] p-5 sm:p-6"
             >
-              <p className="eyebrow-label mb-4">
-                {t("coverageLabel")}
-              </p>
-              <h3 className="font-serif text-[2rem] text-foreground">
+              <p className="eyebrow-label mb-4">{t("coverageLabel")}</p>
+              <h3 className="font-serif text-[1.85rem] leading-tight text-foreground">
                 {siteConfig.serviceAreas[index]}
               </h3>
-              <p className="mt-3 text-sm leading-7 text-muted-foreground">
+              <p className="mt-3 text-sm leading-7 text-muted-foreground sm:text-[0.98rem]">
                 {t(`cities.${areaKey}.copy`)}
               </p>
             </PremiumSectionShell>
@@ -48,4 +46,3 @@ export function AreasWeServe({
     </section>
   );
 }
-

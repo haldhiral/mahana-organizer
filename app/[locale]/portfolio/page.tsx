@@ -82,7 +82,7 @@ function PortfolioPageContent({ locale }: { locale: AppLocale }) {
       {featuredEntry ? (
         <section className="section-pad pt-0">
           <Container>
-            <PremiumSectionShell className="rounded-[2.8rem] p-6 lg:grid lg:grid-cols-[1fr_1fr] lg:gap-8 lg:p-8">
+            <PremiumSectionShell className="rounded-[2.8rem] p-5 sm:p-6 lg:grid lg:grid-cols-[1fr_1fr] lg:gap-8 lg:p-8">
               <ElegantImagePlaceholder
                 alt={t(`entries.${featuredEntry.id}.title`)}
                 src={featuredEntry.image}
