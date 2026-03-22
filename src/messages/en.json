@@ -1,0 +1,676 @@
+{
+  "localeSwitcher": {
+    "label": "Choose language",
+    "id": "Bahasa Indonesia",
+    "en": "English"
+  },
+  "header": {
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "packages": "Packages",
+    "portfolio": "Portfolio",
+    "testimonials": "Testimonials",
+    "contact": "Contact"
+  },
+  "common": {
+    "consultationCta": "Book a Consultation",
+    "whatsappCta": "Chat on WhatsApp",
+    "learnMore": "Learn More",
+    "viewAll": "View All",
+    "viewServices": "View Services",
+    "viewPackages": "View Packages",
+    "viewPortfolio": "View Portfolio",
+    "viewTestimonials": "Read Testimonials",
+    "featuredWork": "Featured work",
+    "serviceAreas": "Service areas"
+  },
+  "footer": {
+    "description": "Mahana Organizer supports couples who want a wedding that feels polished, warm, and refined across {areas}.",
+    "ctaButton": "Consult on WhatsApp",
+    "quickLinks": "Quick links",
+    "contact": "Contact",
+    "social": "Social",
+    "hours": "Response window: {hours}",
+    "coverage": "Serving: {areas}",
+    "copyright": "© {year} Mahana Organizer. All rights reserved.",
+    "locale": "Active language: {locale}"
+  },
+  "metadata": {
+    "home": {
+      "title": "Mahana Organizer | Wedding Organizer in Jakarta, Bogor, Depok, Bekasi & Tangerang",
+      "description": "Mahana Organizer is a premium wedding organizer for couples in Jakarta, Bogor, Depok, Bekasi, and Tangerang who want structured planning, calm execution, and warm guest experience."
+    },
+    "about": {
+      "title": "About Mahana Organizer | A Warm and Structured Wedding Planning Team",
+      "description": "Discover Mahana Organizer's story, approach, values, and planning philosophy for elegant weddings across Jakarta, Bogor, Depok, Bekasi, and Tangerang."
+    },
+    "services": {
+      "title": "Mahana Organizer Services | From Full Planning to Wedding Day Coordination",
+      "description": "Explore Mahana Organizer services including Wedding Organizer, Wedding Planner Service, the All-in Exclusive Package, and Additional Catering for celebrations in Jakarta, Bogor, Depok, Bekasi, and Tangerang."
+    },
+    "packages": {
+      "title": "Mahana Organizer Packages | Wedding Organizer, Planner, and All-in Services",
+      "description": "Explore the On The Day Package, Wedding Planner Service, All-in Exclusive Package, and Additional Catering from Mahana Organizer for your wedding needs."
+    },
+    "portfolio": {
+      "title": "Mahana Organizer Portfolio | Elegant Wedding References",
+      "description": "Browse Mahana Organizer portfolio references featuring intimate weddings, ballroom receptions, garden celebrations, and family-centered events in Jakarta, Bogor, Depok, Bekasi, and Tangerang."
+    },
+    "testimonials": {
+      "title": "Mahana Organizer Testimonials | Stories from Couples and Families",
+      "description": "Read testimonials from couples who experienced Mahana Organizer's calm guidance, thoughtful coordination, and polished wedding execution."
+    },
+    "contact": {
+      "title": "Contact Mahana Organizer | Wedding Organizer Consultation",
+      "description": "Contact Mahana Organizer for package consultation, custom requests, additional catering discussion, or a faster first conversation on WhatsApp."
+    }
+  },
+  "taxonomy": {
+    "tags": {
+      "jakarta": "Jakarta",
+      "bogor": "Bogor",
+      "depok": "Depok",
+      "bekasi": "Bekasi",
+      "tangerang": "Tangerang",
+      "fullPlanning": "Full planning",
+      "coordination": "Coordination",
+      "ballroom": "Ballroom",
+      "garden": "Garden",
+      "intimate": "Intimate",
+      "traditional": "Traditional",
+      "family": "Family focused",
+      "akad": "Akad",
+      "reception": "Reception"
+    }
+  },
+  "areasSection": {
+    "coverageLabel": "Areas we serve",
+    "cities": {
+      "jakarta": {
+        "copy": "For couples who need polished vendor flow, efficient preparation, and warm execution in the middle of a fast-paced city schedule."
+      },
+      "bogor": {
+        "copy": "Well suited to garden celebrations, villas, and nearby destination venues that require detailed run-of-show planning and thoughtful guest movement."
+      },
+      "depok": {
+        "copy": "Ideal for family-centered celebrations that should feel personal, comfortable, and properly structured from briefing to event day."
+      },
+      "bekasi": {
+        "copy": "A great choice for couples who want a polished celebration in the east Jakarta area with attentive vendor coordination and orderly guest flow."
+      },
+      "tangerang": {
+        "copy": "A strong fit for hotel ballrooms, suburban venues, and family-led events that need tidy vendor coordination and comfortable guest flow from arrival to the final transition."
+      }
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Wedding organizer serving Jakarta, Bogor, Depok, Bekasi, and Tangerang",
+      "title": "Mahana Organizer shapes wedding days that feel warm, elegant, and effortlessly calm.",
+      "description": "We help couples refine the event flow, vendor coordination, and guest experience for weddings across {areas}.",
+      "primaryCta": "Book a Consultation",
+      "secondaryCta": "Start on WhatsApp",
+      "imageLabel": "Illustration of Mahana Organizer wedding planning atmosphere",
+      "highlightTitle": "Clear guidance from the first briefing to the final vendor call.",
+      "highlightBody": "Every detail is structured so you can stay fully present in your most important moments without carrying the technical load yourself.",
+      "coverageLabel": "Coverage",
+      "stats": {
+        "planning": "Structured planning with realistic priorities.",
+        "coordination": "Calm and responsive event-day execution.",
+        "coverage": "Serving Jakarta, Bogor, Depok, Bekasi, and Tangerang."
+      }
+    },
+    "whyChoose": {
+      "eyebrow": "Why Mahana",
+      "title": "Support that helps couples feel genuinely at ease.",
+      "description": "Mahana Organizer blends taste, structure, and clear communication so every decision feels lighter and easier to move forward with.",
+      "items": {
+        "strategy": {
+          "title": "Clear planning structure",
+          "body": "Each stage is organized around practical priorities, timelines you can follow, and guidance that makes sense to both couples and families."
+        },
+        "taste": {
+          "title": "Refined visual direction",
+          "body": "We help shape the concept into something coherent, personal, and elegant when brought into the real event setting."
+        },
+        "control": {
+          "title": "Responsive coordination",
+          "body": "Vendor briefings, run-of-show details, and on-site needs are handled with a calm but decisive working rhythm."
+        },
+        "hospitality": {
+          "title": "Comfortable guest flow",
+          "body": "We pay attention to guest movement, core family moments, and transitions so the celebration feels warm and professional."
+        }
+      }
+    },
+    "services": {
+      "eyebrow": "Services",
+      "title": "Core Mahana Organizer services for a more structured wedding journey.",
+      "description": "From full wedding planning to day-of coordination, each service is designed to make decisions clearer and execution feel lighter.",
+      "cta": "View Services"
+    },
+    "packages": {
+      "eyebrow": "Packages",
+      "title": "Signature packages with a polished, flexible approach.",
+      "description": "Each package can be tailored to your event scale, vendor complexity, and the level of guidance you want from your organizer.",
+      "cta": "View Packages"
+    },
+    "portfolio": {
+      "eyebrow": "Portfolio",
+      "title": "Celebrations that feel personal, polished, and thoughtfully directed.",
+      "description": "A closer look at how Mahana Organizer shapes intimate weddings, ballroom celebrations, and tradition-led family events.",
+      "cta": "Explore Portfolio"
+    },
+    "testimonials": {
+      "eyebrow": "Testimonials",
+      "title": "Trust is built through experiences that feel real from start to finish.",
+      "description": "What couples value most is often not just the final result, but the clear communication, calm coordination, and confidence they felt throughout the process.",
+      "cta": "Read Testimonials"
+    },
+    "areasSection": {
+      "eyebrow": "Coverage",
+      "title": "Serving couples across Jakarta, Bogor, Depok, Bekasi, and Tangerang without making communication feel distant.",
+      "description": "Every consultation naturally covers venue logistics, vendor coordination, and scheduling across our full service area so the process stays seamless from the start."
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "The questions prospective couples most often ask first.",
+      "description": "These short answers offer a quick introduction to how Mahana Organizer works before you move into a consultation."
+    },
+    "finalCta": {
+      "eyebrow": "Start the conversation",
+      "title": "If you want a wedding that feels organized without losing warmth, begin with a short consultation.",
+      "description": "Share your date, location, and early event direction. Mahana Organizer will help map out the most relevant next steps."
+    }
+  },
+  "aboutPage": {
+    "intro": {
+      "eyebrow": "About Mahana Organizer",
+      "title": "A wedding planning approach that feels gentle in tone and precise in execution.",
+      "description": "Mahana Organizer is built for couples who want an elegant celebration without losing the personal warmth of the day, especially across Jakarta, Bogor, Depok, Bekasi, and Tangerang."
+    },
+    "story": {
+      "eyebrow": "Brand story",
+      "title": "We believe beautiful wedding days always begin with a calm process.",
+      "body1": "Mahana Organizer was shaped around the need for a team that is not only creative, but deeply dependable when it comes to the technical details that often overwhelm couples.",
+      "body2": "Our approach keeps the couple at the center of every decision. Our role is to translate preferences, family rhythm, and event priorities into a clear and workable planning process."
+    },
+    "mission": {
+      "title": "Our mission",
+      "body": "To create a wedding planning experience that feels directed, warm, and professional so couples can enjoy the process without losing focus on the moments that matter most."
+    },
+    "approach": {
+      "title": "How we work",
+      "body": "We begin by listening carefully, mapping priorities, and tailoring the team and support level to the event. Every piece of guidance is kept concise, respectful, and actionable."
+    },
+    "values": {
+      "eyebrow": "Working values",
+      "title": "Four principles behind every decision we make.",
+      "description": "These values keep each project consistent, from internal communication to the guest experience on the wedding day.",
+      "items": {
+        "clarity": {
+          "title": "Clarity",
+          "body": "Clean briefs, clear options, and communication that never feels unnecessarily complicated."
+        },
+        "care": {
+          "title": "Care",
+          "body": "Every couple arrives with a different story, so the approach should never feel generic."
+        },
+        "composure": {
+          "title": "Composure",
+          "body": "We protect a calm working rhythm so important decisions can still be made with a clear head."
+        },
+        "craft": {
+          "title": "Craft",
+          "body": "We value refined details, elegant visual direction, and event flow that feels naturally comfortable."
+        }
+      }
+    },
+    "trust": {
+      "eyebrow": "Why clients trust us",
+      "title": "Why couples feel safe working with Mahana Organizer.",
+      "description": "Trust is shaped not only by the final event, but by the quality of the process along the way.",
+      "items": {
+        "communication": {
+          "title": "Easy-to-follow communication",
+          "body": "Couples and families receive updates that are concise, clear, and delivered at the right time."
+        },
+        "vendor": {
+          "title": "Firm vendor coordination",
+          "body": "We make sure technical details do not slip and that every vendor is aligned to the same event flow."
+        },
+        "onsite": {
+          "title": "Responsive on-site handling",
+          "body": "The team is there to reduce pressure, manage transitions, and keep execution aligned throughout the day."
+        }
+      }
+    },
+    "team": {
+      "eyebrow": "Core team",
+      "title": "A team structure that can grow with the scale of the celebration.",
+      "description": "This structure reflects the core roles that support each celebration, from strategic planning to on-site execution.",
+      "items": {
+        "leadPlanner": {
+          "name": "Founder / Lead Planner",
+          "role": "Strategy and client experience direction",
+          "body": "Leads the main consultation, shapes the planning structure, and keeps the event tone consistent from start to finish."
+        },
+        "coordinationLead": {
+          "name": "Coordination Lead",
+          "role": "Rundown, vendor flow, and on-site execution",
+          "body": "Focuses on technical synchronization, field briefings, and the steady movement of the event on location."
+        },
+        "guestExperience": {
+          "name": "Guest Experience Team",
+          "role": "Hospitality and family flow",
+          "body": "Helps ensure guests, core family members, and major transitions feel comfortable and properly supported."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "Continue the conversation",
+      "title": "If you are looking for a team that feels graceful in approach and strong in coordination, we are ready to help.",
+      "description": "Start with a consultation to see which support format best suits the character and scale of your event."
+    }
+  },
+  "servicesPage": {
+    "intro": {
+      "eyebrow": "Mahana Organizer Services",
+      "title": "Support that can begin with big-picture strategy and extend all the way to event-day details.",
+      "description": "Each service is structured so couples receive the right level of support without paying for layers they do not need yet."
+    },
+    "snapshot": {
+      "title": "Our services work best when couples need a partner who can shape decisions, not simply execute a checklist."
+    },
+    "process": {
+      "eyebrow": "Service flow",
+      "title": "Three phases we protect to keep the process clear.",
+      "description": "Even when scope changes, the working rhythm always starts with priorities, moves into technical coordination, and ends in well-guided execution.",
+      "items": {
+        "discover": {
+          "title": "Discover",
+          "body": "Understanding the event vision, family rhythm, vendor preferences, and the areas where organizer support matters most."
+        },
+        "structure": {
+          "title": "Structure",
+          "body": "Building the timeline, run-of-show, vendor priorities, and role division so every detail has clear ownership."
+        },
+        "deliver": {
+          "title": "Deliver",
+          "body": "Guiding final communication, event-day requirements, and guest flow so execution feels smooth and controlled."
+        }
+      }
+    },
+    "consultation": {
+      "title": "Not sure which service you need yet?",
+      "body": "Start with a consultation. We can help assess whether you need full planning, wedding day coordination, or a more efficient combination of support."
+    },
+    "coverage": {
+      "title": "Our service coverage feels seamless because it is built into how we work.",
+      "body": "Mahana Organizer serves weddings across Jakarta, Bogor, Depok, Bekasi, and Tangerang. Venue logistics, vendor coordination, and travel planning are all handled during consultation so every event feels close and well-supported."
+    },
+    "areasSection": {
+      "eyebrow": "Working area",
+      "title": "City venues, villas, and family-led celebrations are all handled with the same tidy working rhythm.",
+      "description": "Location changes the logistics, not our quality standard. What shifts is the level of transport, vendor flow, and venue coordination required."
+    },
+    "cta": {
+      "eyebrow": "Need service direction",
+      "title": "We can help identify the support format that fits your event most clearly.",
+      "description": "Share the scale of your event, your vendor structure, and your target date. We will help map out the most efficient service setup."
+    }
+  },
+  "packagesPage": {
+    "intro": {
+      "eyebrow": "Mahana Organizer Packages",
+      "title": "A package lineup for wedding-day coordination, planning support, and more complete celebrations.",
+      "description": "This page clearly presents the On The Day Package, Wedding Planner Service, All-in Exclusive Package, and Additional Catering so early comparison feels easier."
+    },
+    "featuredLabel": "Recommended",
+    "audienceLabel": "Suitable for",
+    "comparisonNote": "Prices are not displayed as fixed rates. Each package can be tailored after an initial consultation.",
+    "cards": {
+      "cta": "Discuss This Package",
+      "atelier": {
+        "badge": "Atelier Intimate",
+        "name": "Atelier Intimate",
+        "description": "An essential package for couples who already have some major decisions in place and need a team to refine preparation flow and execution.",
+        "audience": "Couples planning an intimate or family-led celebration who still want the process to feel calm and elegant."
+      },
+      "signature": {
+        "badge": "Signature Celebration",
+        "name": "Signature Celebration",
+        "description": "A more complete planning format for couples who need concept direction, stronger vendor coordination, and broader event control.",
+        "audience": "Couples who want a balanced level of strategic planning and calm, polished execution."
+      },
+      "grand": {
+        "badge": "Grand Soiree",
+        "name": "Grand Soiree",
+        "description": "Our most comprehensive package for weddings with higher production complexity, more stakeholders, and heavier coordination needs.",
+        "audience": "Couples preparing a ballroom celebration, a large event sequence, or a wedding with multiple vendor touchpoints."
+      }
+    },
+    "customization": {
+      "eyebrow": "Package note",
+      "title": "The package presentation is designed to stay clear while leaving room for tailoring.",
+      "description": "After consultation, Mahana Organizer can help adjust the support details, vendor scope, added categories, and family needs to match the character of your event."
+    },
+    "process": {
+      "eyebrow": "After choosing a package",
+      "title": "The transition from package to execution is kept as simple as possible.",
+      "description": "Once the package is agreed, we break the work into clear stages so couples do not have to guess what should happen next.",
+      "items": {
+        "brief": {
+          "title": "Initial brief",
+          "body": "Aligning expectations, event timing, and the level of support required."
+        },
+        "mapping": {
+          "title": "Planning map",
+          "body": "Building a working map that covers vendors, concept, core family, and all key coordination points."
+        },
+        "execution": {
+          "title": "Execution rhythm",
+          "body": "Keeping follow-up consistent so every party is ready by the final week and event day."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "Discuss your needs",
+      "title": "The best package is the one that makes you feel properly supported.",
+      "description": "Use this page as your starting reference, then let Mahana Organizer help shape the support format that fits your celebration best."
+    }
+  },
+  "portfolioPage": {
+    "intro": {
+      "eyebrow": "Portfolio",
+      "title": "Selected works that show our taste, flow, and coordination quality.",
+      "description": "These selected works reflect Mahana Organizer's visual taste, event flow expertise, and coordination quality across a range of wedding styles."
+    },
+    "featured": {
+      "eyebrow": "Featured work",
+      "title": "A modern ballroom wedding with smooth flow from ceremony to reception.",
+      "description": "This featured work reflects how Mahana Organizer shapes visual direction, guest flow, and vendor coordination into a polished overall experience.",
+      "entry": "south-jakarta-ballroom"
+    },
+    "filters": {
+      "all": "All",
+      "fullPlanning": "Full planning",
+      "coordination": "Coordination",
+      "intimate": "Intimate",
+      "cultural": "Cultural"
+    },
+    "entries": {
+      "menteng-intimate": {
+        "type": "Intimate wedding",
+        "title": "Intimate Vows in Menteng",
+        "description": "A small celebration with warm family flow, orderly guest seating, and a ceremony moment that still feels carefully directed."
+      },
+      "south-jakarta-ballroom": {
+        "type": "Ballroom celebration",
+        "title": "Modern Ballroom Celebration in South Jakarta",
+        "description": "A formal wedding sequence refined through precise vendor flow, soft lighting transitions, and a comfortable guest experience."
+      },
+      "sentul-garden": {
+        "type": "Garden reception",
+        "title": "Garden Reception in Sentul",
+        "description": "An outdoor celebration with thoughtful attention to guest arrival flow, weather backup planning, and relaxed but tidy event rhythm."
+      },
+      "depok-family-ceremony": {
+        "type": "Family-centered ceremony",
+        "title": "Family-Centered Celebration in Depok",
+        "description": "A family-led event with many personal interactions that required soft coordination between core relatives, MC, and key vendors."
+      },
+      "heritage-akad": {
+        "type": "Akad & tradition",
+        "title": "Heritage Akad with Modern Details",
+        "description": "An event structure that respected tradition while allowing the overall visual mood to feel lighter and more refined."
+      },
+      "lakeside-reception": {
+        "type": "Destination-style reception",
+        "title": "Lakeside Reception in Bogor",
+        "description": "A destination-style celebration that demanded more disciplined logistics and vendor sequencing without losing guest comfort."
+      }
+    },
+    "cta": {
+      "eyebrow": "Create your story",
+      "title": "The next portfolio highlight should belong to your celebration.",
+      "description": "If you connect with our taste and working rhythm, let us discuss your concept and event needs."
+    }
+  },
+  "testimonialsPage": {
+    "intro": {
+      "eyebrow": "Testimonials",
+      "title": "What couples remember most is rarely just the decor, but the sense of calm throughout the process.",
+      "description": "Every story here reflects what makes the Mahana experience distinct: genuine care, thoughtful coordination, and a process that puts couples at ease."
+    },
+    "items": {
+      "nadia-farhan": {
+        "quote": "Every decision felt lighter because the Mahana team always gave clear direction without ever making us feel rushed.",
+        "name": "Nadia & Farhan",
+        "context": "Ballroom wedding, Jakarta"
+      },
+      "clara-adrian": {
+        "quote": "When the outdoor venue conditions began to shift because of weather, the team stayed calm and everything still felt under control without panicking the family.",
+        "name": "Clara & Adrian",
+        "context": "Garden celebration, Bogor"
+      },
+      "alya-reza": {
+        "quote": "We loved how Mahana kept our family celebration warm while still maintaining a disciplined rundown. That balance is hard to find.",
+        "name": "Alya & Reza",
+        "context": "Family ceremony, Depok"
+      },
+      "mei-bimo": {
+        "quote": "All the vendors seemed to move in the same rhythm because the organizer team really understood the small details that are easy to miss.",
+        "name": "Mei & Bimo",
+        "context": "Modern reception, Jakarta"
+      }
+    },
+    "trust": {
+      "eyebrow": "Trust markers",
+      "title": "Three things clients appreciate most often.",
+      "description": "What brings recommendations back to Mahana Organizer is not only the final event, but the quality of guidance throughout the journey.",
+      "items": {
+        "clarity": {
+          "title": "Clear direction",
+          "body": "Clients do not have to guess the next priority because each step comes with context and a defined purpose."
+        },
+        "calm": {
+          "title": "A calm team",
+          "body": "In fast-moving and crowded situations, a calm team keeps decisions rational and the atmosphere comfortable."
+        },
+        "hospitality": {
+          "title": "Guests feel considered",
+          "body": "Small details such as arrivals, transitions, and core family needs still receive proper attention."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "Experience the support",
+      "title": "If you are looking for an organizer that communicates clearly and steadies the process, we would be glad to talk.",
+      "description": "Your story will be unique, but our support standard stays the same: polished, warm, and dependable."
+    }
+  },
+  "contactPage": {
+    "intro": {
+      "eyebrow": "Contact Mahana Organizer",
+      "title": "Share your event details and let us see which support format fits best.",
+      "description": "Use the inquiry form for structured details, or reach out on WhatsApp if you would prefer a faster first conversation."
+    },
+    "touchpoints": {
+      "whatsapp": {
+        "title": "WhatsApp consultation",
+        "body": "Ideal for first questions, date availability checks, or a short discussion before a proper meeting."
+      },
+      "email": {
+        "title": "Email details",
+        "body": "Useful for sending an early rundown, concept deck, or any vendor notes you already have."
+      },
+      "hours": {
+        "title": "Response window",
+        "body": "Our team usually replies during daily working hours so communication remains steady and manageable."
+      },
+      "coverage": {
+        "title": "Service coverage",
+        "body": "We actively serve events in Jakarta, Bogor, Depok, Bekasi, and Tangerang, with site-visit timing adjusted to the needs of each venue."
+      }
+    },
+    "form": {
+      "eyebrow": "Inquiry form",
+      "title": "Share enough context so we can guide you in a more relevant direction.",
+      "description": "The clearer your first note is, the easier it becomes for us to prepare the most useful next step."
+    },
+    "response": {
+      "eyebrow": "What to expect",
+      "title": "Our response style is designed to feel concise, clear, and never directionless.",
+      "description": "After receiving your inquiry, we usually review the basics first and then suggest the most relevant next step.",
+      "items": {
+        "review": {
+          "title": "Initial review",
+          "body": "We look at your date, location, and event scale to understand the main priority first."
+        },
+        "followUp": {
+          "title": "Focused follow-up",
+          "body": "If details are still incomplete, we only ask for the additional information that genuinely matters."
+        },
+        "consultation": {
+          "title": "Consultation direction",
+          "body": "You will receive an early sense of which service or package is most appropriate for your event."
+        }
+      }
+    },
+    "areasSection": {
+      "eyebrow": "Service area",
+      "title": "Jakarta, Bogor, Depok, Bekasi, and Tangerang are all handled through the same clear communication rhythm.",
+      "description": "All service areas are discussed directly during your inquiry and venue planning so you always feel supported, no matter the location."
+    },
+    "faq": {
+      "eyebrow": "Quick questions",
+      "title": "The things couples usually want to know before reaching out.",
+      "description": "If your question is not covered here, the Mahana Organizer team is ready to help through the form or WhatsApp."
+    }
+  },
+  "contactForm": {
+    "labels": {
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone / WhatsApp",
+      "eventDate": "Event date",
+      "eventLocation": "Event location",
+      "message": "Tell us what you need"
+    },
+    "placeholders": {
+      "name": "Example: Amelia Putri",
+      "email": "name@email.com",
+      "phone": "Example: +62 812 3456 7890",
+      "eventLocation": "Example: South Jakarta",
+      "message": "Share your event outline, guest count, selected vendors, or the main questions you would like to discuss."
+    },
+    "submit": "Send Inquiry",
+    "submitting": "Sending...",
+    "success": "Your inquiry has been sent. The Mahana Organizer team will review it and get back to you shortly.",
+    "genericError": "There was a problem sending your inquiry. Please try again or contact us via WhatsApp.",
+    "errors": {
+      "required": "This field is required.",
+      "invalidEmail": "Please enter a valid email address.",
+      "invalidPhone": "Please enter a valid phone or WhatsApp number.",
+      "invalidDate": "Please enter the event date in a valid format.",
+      "tooShort": "This field is still too short.",
+      "tooLong": "This field is too long."
+    }
+  },
+  "servicesData": {
+    "fullPlanning": {
+      "badge": "Full planning",
+      "title": "Full wedding planning",
+      "summary": "Comprehensive support for couples who want help shaping the concept, vendor structure, and overall event flow.",
+      "detail": "This service is ideal when you need a partner who can protect the big picture while carefully managing the small details that influence guest experience."
+    },
+    "weddingDayCoordination": {
+      "badge": "Event day",
+      "title": "Wedding day coordination",
+      "summary": "Focused on aligning the rundown, vendor briefing, and on-site control so the event moves according to the agreed rhythm.",
+      "detail": "It is often chosen by couples who already have solid preparation in place but still want a calm and responsive team on the wedding day."
+    },
+    "vendorCoordination": {
+      "badge": "Vendor flow",
+      "title": "Vendor coordination",
+      "summary": "Keeps every vendor working within the same language and timeline so communication does not break at critical moments.",
+      "detail": "Thoughtful vendor coordination reduces confusion during loading, event transitions, and unexpected technical needs at the venue."
+    },
+    "timelinePreparation": {
+      "badge": "Timeline",
+      "title": "Timeline & rundown preparation",
+      "summary": "Builds the timeline, cue list, and event flow details so everyone understands the order of work and its priorities.",
+      "detail": "A strong rundown is never only about timing. It also clarifies who does what, when, and with which dependencies."
+    },
+    "conceptPlanning": {
+      "badge": "Concept",
+      "title": "Concept & theme planning",
+      "summary": "Helps refine the visual tone and event experience so the wedding feels cohesive, personal, and elegant.",
+      "detail": "We help align theme, mood, and vendor needs so the concept becomes more than a collection of references."
+    },
+    "guestExperience": {
+      "badge": "Hospitality",
+      "title": "Guest experience support",
+      "summary": "Shapes guest movement, core family flow, and event transitions so the celebration feels comfortable from start to finish.",
+      "detail": "This service matters especially for events with many stakeholders, large families, or venues with more complex guest movement."
+    },
+    "consultation": {
+      "badge": "Consultation",
+      "title": "Consultation service",
+      "summary": "An early-session format to map your needs, priorities, and the most efficient level of organizer support.",
+      "detail": "It works well for couples who are still evaluating the right support format or want clearer direction on what to do next."
+    }
+  },
+  "packageFeatures": {
+    "consultationBlueprint": "Initial consultation session and event-needs mapping",
+    "vendorAlignment": "Core vendor coordination and essential briefing support",
+    "timelineFlow": "Timeline planning and run-of-show preparation",
+    "weddingDayCaptain": "Lead coordination on the event day",
+    "vendorShortlist": "Vendor shortlist direction based on event character",
+    "stylingDirection": "Sharper concept and styling direction",
+    "masterRundown": "Comprehensive master rundown for all stakeholders",
+    "guestFlow": "Guest and core family flow planning",
+    "budgetGuidance": "Priority-led budget and vendor decision guidance",
+    "productionSupervision": "Production oversight and vendor loading supervision",
+    "hospitalityDesk": "On-site hospitality and family flow support",
+    "postEventHandover": "Final handover and event closing support"
+  },
+  "faq": {
+    "items": {
+      "coverage": {
+        "question": "Does Mahana Organizer serve Jakarta, Bogor, Depok, Bekasi, and Tangerang?",
+        "answer": "Yes. We currently focus on serving couples across Jakarta, Bogor, Depok, Bekasi, and Tangerang. Coverage is discussed directly during consultation so venue adjustments, site visits, and meeting schedules can stay efficient."
+      },
+      "consultation": {
+        "question": "What should we prepare before the first consultation?",
+        "answer": "Ideally you already have your target date, the venue or area you are considering, an estimated guest count, and a short picture of the celebration you want. If not, we can still help map the first steps."
+      },
+      "timeline": {
+        "question": "When should we reach out to a wedding organizer?",
+        "answer": "Earlier is always better, especially if you need full planning or fairly intensive vendor coordination. For wedding day coordination, we can also step in once we review how prepared the event already is."
+      },
+      "vendorTeam": {
+        "question": "Do we have to use Mahana Organizer's preferred vendors?",
+        "answer": "No. We can work with vendors you have already selected and help align the working flow, technical briefing, and communication so the full team stays on the same rhythm."
+      },
+      "customPackages": {
+        "question": "Can the packages be tailored to our event?",
+        "answer": "Yes. The packages presented here serve as an initial service framework. After consultation, the details can be adjusted based on your venue, event sequence, vendor count, and family needs."
+      },
+      "responseTime": {
+        "question": "How quickly does Mahana Organizer usually respond to inquiries?",
+        "answer": "We aim to respond within daily working hours. For inquiries that need a little more review, we usually send an initial confirmation first before sharing more specific direction."
+      },
+      "whatsapp": {
+        "question": "Can we reach out directly on WhatsApp?",
+        "answer": "Absolutely. WhatsApp works well for short questions, availability checks, or a first conversation before you send fuller details through the inquiry form."
+      }
+    }
+  }
+}
