@@ -39,7 +39,7 @@ export function LanguageSwitcher({
   return (
     <div
       className={cn(
-        "inline-flex items-center gap-1 rounded-full border border-border-strong/60 bg-white/78 p-1 text-sm shadow-[0_10px_24px_rgba(80,59,43,0.08)] backdrop-blur-xl",
+        "surface-card-strong inline-flex items-center gap-1 rounded-full p-1 text-sm",
         compact && "text-xs",
         isPending && "opacity-80",
         className,
@@ -60,8 +60,8 @@ export function LanguageSwitcher({
               "rounded-full px-3 py-1.5 font-semibold uppercase tracking-[0.14em] transition-all duration-300 ease-out",
               compact && "px-2.5 py-1 text-[0.7rem]",
               active
-                ? "bg-foreground text-white shadow-[0_10px_22px_rgba(36,27,23,0.18)]"
-                : "text-foreground/70 hover:bg-white hover:text-foreground hover:shadow-[0_4px_12px_rgba(80,59,43,0.06)]",
+                ? "bg-contrast text-contrast-foreground shadow-[var(--shadow-soft)]"
+                : "text-foreground/70 hover:bg-surface-strong/92 hover:text-foreground hover:shadow-[var(--shadow-soft)]",
             )}
             aria-pressed={active}
           >

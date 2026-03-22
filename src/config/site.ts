@@ -9,7 +9,7 @@ const whatsappDefaultMessage = {
 export const siteConfig = {
   name: "Mahana Organizer",
   shortName: "Mahana",
-  domain: "https://www.mahanaorganizer.com",
+  domain: "https://mahanaorganizer.com",
   category: "Wedding Organizer / Event Planner",
   defaultLocale: routing.defaultLocale,
   locales: routing.locales,
@@ -17,11 +17,11 @@ export const siteConfig = {
     id: "Wedding organizer elegan untuk perayaan yang hangat dan tertata.",
     en: "An elegant wedding organizer for warm, beautifully orchestrated celebrations.",
   } satisfies Record<AppLocale, string>,
-  phoneDisplay: "+62 896-2970-2997",
-  phoneNumber: "+6289629702997",
-  whatsappNumber: "6289629702997",
+  phoneDisplay: "0813-1800-6962",
+  phoneNumber: "+6281318006962",
+  whatsappNumber: "6281318006962",
   whatsappDefaultMessage,
-  email: "[EMAIL_ADDRESS]",
+  email: "mahanaorganizer3@gmail.com",
   responseHours: "Daily, 09.00 - 20.00 WIB",
   serviceAreas: ["Jakarta", "Bogor", "Depok", "Bekasi", "Tangerang"] as const,
   logoPath: "/logo-mark.svg",
@@ -49,10 +49,37 @@ export function getLocalizedUrl(locale: AppLocale, pathname = "/") {
   return getAbsoluteUrl(`/${locale}${normalizedPath}`);
 }
 
+type LanguageAlternates = Record<AppLocale, string> & {
+  "x-default": string;
+};
+
+export function getLanguageAlternates(pathname = "/"): LanguageAlternates {
+  const localizedAlternates = Object.fromEntries(
+    routing.locales.map((locale) => [locale, getLocalizedUrl(locale, pathname)]),
+  ) as Record<AppLocale, string>;
+
+  return {
+    ...localizedAlternates,
+    "x-default": getLocalizedUrl(siteConfig.defaultLocale, pathname),
+  };
+}
+
 export function getWhatsAppUrl(locale: AppLocale, customMessage?: string) {
   const text = encodeURIComponent(
     customMessage ?? siteConfig.whatsappDefaultMessage[locale],
   );
 
   return `https://wa.me/${siteConfig.whatsappNumber}?text=${text}`;
+}
+
+export function getMailtoUrl(subject?: string) {
+  if (!subject) {
+    return `mailto:${siteConfig.email}`;
+  }
+
+  return `mailto:${siteConfig.email}?subject=${encodeURIComponent(subject)}`;
+}
+
+export function getTelUrl() {
+  return `tel:${siteConfig.phoneNumber}`;
 }

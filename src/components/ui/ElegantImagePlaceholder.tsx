@@ -34,7 +34,7 @@ export function ElegantImagePlaceholder({
       imageClassName={imageClassName}
       sizes={sizes}
       overlay={
-        <div className="absolute inset-x-4 bottom-4 rounded-[1.5rem] border border-white/60 bg-white/78 px-5 py-4 shadow-[0_18px_36px_rgba(62,44,31,0.14)] backdrop-blur-2xl">
+        <div className="image-frost absolute inset-x-4 bottom-4 rounded-[1.5rem] px-5 py-4">
           <p className="text-[0.68rem] font-semibold uppercase tracking-[0.26em] text-primary">
             {label}
           </p>

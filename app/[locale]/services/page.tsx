@@ -166,7 +166,7 @@ function ServicesPageContent({ locale }: { locale: AppLocale }) {
               {offerings.serviceSummaries.map((item) => (
                 <div
                   key={item.id}
-                  className="rounded-[1.6rem] border border-white/70 bg-white/72 p-5"
+                  className="surface-card rounded-[1.6rem] p-5"
                 >
                   <p className="text-xs font-semibold uppercase tracking-[0.24em] text-primary">
                     {item.badge}

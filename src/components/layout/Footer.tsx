@@ -2,11 +2,26 @@ import { useLocale, useTranslations } from "next-intl";
 
 import { Container } from "@/components/ui/Container";
 import { PremiumSectionShell } from "@/components/ui/PremiumSectionShell";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 import { navigationItems } from "@/config/navigation";
-import { siteConfig } from "@/config/site";
+import { getMailtoUrl, getWhatsAppUrl, siteConfig } from "@/config/site";
 import { Link } from "@/i18n/navigation";
 import type { AppLocale } from "@/i18n/routing";
+import {
+  ClockIcon,
+  MailIcon,
+  MapPinIcon,
+  PhoneIcon,
+} from "@/components/ui/icons";
+
+type ContactItem = {
+  icon: typeof PhoneIcon;
+  label: string;
+  value: string;
+  href?: string;
+  external?: boolean;
+};
 
 export function Footer() {
   const locale = useLocale() as AppLocale;
@@ -14,6 +29,31 @@ export function Footer() {
   const tNav = useTranslations("nav");
   const currentYear = new Date().getFullYear();
   const areasStr = siteConfig.serviceAreas.join(", ");
+  const contactItems: ContactItem[] = [
+    {
+      icon: PhoneIcon,
+      label: tFooter("whatsapp"),
+      value: siteConfig.phoneDisplay,
+      href: getWhatsAppUrl(locale),
+      external: true,
+    },
+    {
+      icon: MailIcon,
+      label: tFooter("email"),
+      value: siteConfig.email,
+      href: getMailtoUrl(),
+    },
+    {
+      icon: ClockIcon,
+      label: tFooter("hoursLabel"),
+      value: siteConfig.responseHours,
+    },
+    {
+      icon: MapPinIcon,
+      label: tFooter("coverageLabel"),
+      value: areasStr,
+    },
+  ];
 
   return (
     <footer className="section-pad pb-8">
@@ -39,7 +79,7 @@ export function Footer() {
                     <li key={item.href}>
                       <Link
                         href={item.href}
-                        className="inline-flex rounded-full px-3 py-1.5 text-sm text-muted-foreground transition-colors duration-200 hover:bg-white/55 hover:text-foreground"
+                        className="inline-flex rounded-full px-3 py-1.5 text-sm text-muted-foreground transition-colors duration-200 hover:bg-surface/72 hover:text-foreground"
                       >
                         {tNav(item.labelKey)}
                       </Link>
@@ -52,9 +92,34 @@ export function Footer() {
             <div>
               <p className="eyebrow-label mb-5">{tFooter("contact")}</p>
               <ul className="flex flex-col gap-3 text-sm text-muted-foreground sm:text-[0.98rem]">
-                <li>{tFooter("hours", { hours: siteConfig.responseHours })}</li>
-                <li>{tFooter("coverage", { areas: areasStr })}</li>
-                <li>{siteConfig.email}</li>
+                {contactItems.map((item) => {
+                  const Icon = item.icon;
+
+                  return (
+                    <li key={item.label} className="flex items-start gap-3">
+                      <span className="icon-chip mt-0.5 h-9 w-9 shrink-0">
+                        <Icon className="h-4 w-4" />
+                      </span>
+                      <span className="min-w-0">
+                        <span className="block text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-foreground/58">
+                          {item.label}
+                        </span>
+                        {item.href ? (
+                          <a
+                            href={item.href}
+                            target={item.external ? "_blank" : undefined}
+                            rel={item.external ? "noopener noreferrer" : undefined}
+                            className="mt-1 block break-all text-foreground transition-colors hover:text-primary"
+                          >
+                            {item.value}
+                          </a>
+                        ) : (
+                          <span className="mt-1 block text-foreground">{item.value}</span>
+                        )}
+                      </span>
+                    </li>
+                  );
+                })}
               </ul>
 
               <p className="eyebrow-label mb-4 mt-8">{tFooter("social")}</p>
@@ -65,12 +130,19 @@ export function Footer() {
                     href={url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="rounded-full border border-border/60 bg-white/60 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-foreground/70 transition-all duration-200 hover:border-primary/40 hover:bg-white hover:text-foreground"
+                    className="surface-card rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-foreground/70 transition-all duration-200 hover:border-primary/40 hover:text-foreground"
                     aria-label={name}
                   >
                     {name}
                   </a>
                 ))}
+              </div>
+
+              <div className="mt-8">
+                <p className="mb-3 text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-foreground/58">
+                  {tFooter("theme")}
+                </p>
+                <ThemeToggle />
               </div>
             </div>
           </div>

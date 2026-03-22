@@ -1,12 +1,21 @@
 import type { Metadata } from "next";
 
-import { getAbsoluteUrl, getLocalizedUrl, siteConfig } from "@/config/site";
+import {
+  getAbsoluteUrl,
+  getLanguageAlternates,
+  getLocalizedUrl,
+  siteConfig,
+} from "@/config/site";
 import type { AppLocale } from "@/i18n/routing";
 
 const openGraphLocaleMap: Record<AppLocale, string> = {
   id: "id_ID",
   en: "en_US",
 };
+
+export function getOpenGraphLocale(locale: AppLocale) {
+  return openGraphLocaleMap[locale];
+}
 
 type MetadataInput = {
   locale: AppLocale;
@@ -34,26 +43,25 @@ export function buildMetadata({
 }: MetadataInput): Metadata {
   const canonicalUrl = getLocalizedUrl(locale, pathname);
   const socialImage = image.startsWith("http") ? image : getAbsoluteUrl(image);
+  const resolvedTitle = title.includes(siteConfig.name)
+    ? { absolute: title }
+    : title;
 
   return {
     metadataBase: new URL(siteConfig.domain),
-    title,
+    title: resolvedTitle,
     description,
     keywords,
     alternates: {
       canonical: canonicalUrl,
-      languages: {
-        "id-ID": getLocalizedUrl("id", pathname),
-        "en-US": getLocalizedUrl("en", pathname),
-        "x-default": getLocalizedUrl(siteConfig.defaultLocale, pathname),
-      },
+      languages: getLanguageAlternates(pathname),
     },
     openGraph: {
       title,
       description,
       url: canonicalUrl,
       siteName: siteConfig.name,
-      locale: openGraphLocaleMap[locale],
+      locale: getOpenGraphLocale(locale),
       type,
       images: [
         {
@@ -73,6 +81,10 @@ export function buildMetadata({
     robots: {
       index: true,
       follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+      },
     },
   };
 }

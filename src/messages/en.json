@@ -8,6 +8,16 @@
     "openMenu": "Open navigation menu",
     "closeMenu": "Close navigation menu"
   },
+  "theme": {
+    "label": "Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "current": "Current theme: {theme}",
+    "switchTo": {
+      "light": "Switch to light mode",
+      "dark": "Switch to dark mode"
+    }
+  },
   "nav": {
     "home": "Home",
     "about": "About",
@@ -35,6 +45,11 @@
     "quickLinks": "Quick links",
     "contact": "Contact",
     "social": "Social",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "hoursLabel": "Response window",
+    "coverageLabel": "Coverage",
+    "theme": "Theme",
     "hours": "Response window: {hours}",
     "coverage": "Serving: {areas}",
     "copyright": "Copyright {year} Mahana Organizer. All rights reserved.",
@@ -566,7 +581,7 @@
     "placeholders": {
       "name": "Amelia Putri",
       "email": "name@email.com",
-      "phone": "+62 812 3456 7890",
+      "phone": "0813-1800-6962",
       "eventLocation": "South Jakarta",
       "message": "Share your event outline, guest count, selected vendors, or the main questions you would like to discuss."
     },

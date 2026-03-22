@@ -1,6 +1,7 @@
 import { useLocale } from "next-intl";
 
 import { Badge } from "@/components/ui/Badge";
+import { CheckIcon } from "@/components/ui/icons";
 import { PremiumSectionShell } from "@/components/ui/PremiumSectionShell";
 import { getWeddingOfferings } from "@/data/offerings";
 import type { AppLocale } from "@/i18n/routing";
@@ -49,7 +50,7 @@ export function ServiceCards({
             <ul className="mt-5 grid gap-3 text-sm leading-6 text-foreground/82">
               {service.highlights.map((item) => (
                 <li key={item} className="flex items-start gap-3">
-                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                  <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
                   <span>{item}</span>
                 </li>
               ))}

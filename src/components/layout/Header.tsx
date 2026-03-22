@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 
 import { buttonStyles } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { siteConfig } from "@/config/site";
 import { navigationItems } from "@/config/navigation";
 import { Link, usePathname } from "@/i18n/navigation";
@@ -60,13 +61,13 @@ export function Header() {
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-500 ease-out",
         solidHeader
-          ? "border-b border-border/60 bg-white/90 shadow-[0_6px_24px_rgba(80,59,43,0.08)] backdrop-blur-2xl"
+          ? "border-b border-border/60 bg-surface/88 shadow-[var(--shadow-soft)] backdrop-blur-2xl"
           : "bg-transparent",
       )}
     >
       <Container className="flex h-[4.75rem] items-center justify-between gap-4">
         <Link href="/" className="flex items-center gap-3" onClick={() => setIsMenuOpen(false)}>
-          <div className="flex h-12 w-12 items-center justify-center rounded-full border border-white/75 bg-white/80 shadow-[0_14px_28px_rgba(74,53,36,0.12)]">
+          <div className="surface-card-strong flex h-12 w-12 items-center justify-center rounded-full border-border/60">
             <Image
               src="/logo-mark.svg"
               alt={siteConfig.name}
@@ -91,14 +92,14 @@ export function Header() {
                 className={cn(
                   "inline-flex items-center gap-2 rounded-full px-4 py-2.5 text-[0.95rem] font-medium transition-all duration-200",
                   active
-                    ? "bg-white text-foreground shadow-[0_12px_24px_rgba(46,33,24,0.08)]"
-                    : "text-foreground/75 hover:bg-white/60 hover:text-foreground",
+                    ? "bg-contrast text-contrast-foreground shadow-[var(--shadow-soft)]"
+                    : "text-foreground/75 hover:bg-surface/76 hover:text-foreground",
                 )}
               >
                 <span
                   className={cn(
                     "h-1.5 w-1.5 rounded-full transition-opacity",
-                    active ? "bg-primary opacity-100" : "bg-primary/60 opacity-0",
+                    active ? "bg-current opacity-80" : "bg-primary/60 opacity-0",
                   )}
                 />
                 {tNav(item.labelKey)}
@@ -108,45 +109,49 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
+          <ThemeToggle />
           <LanguageSwitcher compact />
           <Link href="/contact" className={buttonStyles()}>
             {tCommon("consultationCta")}
           </Link>
         </div>
 
-        <button
-          type="button"
-          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border-strong/60 bg-white/82 shadow-[0_10px_24px_rgba(80,59,43,0.08)] lg:hidden"
-          onClick={() => setIsMenuOpen((value) => !value)}
-          aria-expanded={isMenuOpen}
-          aria-label={isMenuOpen ? tHeader("closeMenu") : tHeader("openMenu")}
-        >
-          <span className="relative block h-4 w-5">
-            <span
-              className={cn(
-                "absolute left-0 top-0 h-0.5 w-5 rounded-full bg-foreground transition-transform duration-300",
-                isMenuOpen && "translate-y-[7px] rotate-45",
-              )}
-            />
-            <span
-              className={cn(
-                "absolute left-0 top-[7px] h-0.5 w-5 rounded-full bg-foreground transition-opacity duration-300",
-                isMenuOpen && "opacity-0",
-              )}
-            />
-            <span
-              className={cn(
-                "absolute left-0 top-[14px] h-0.5 w-5 rounded-full bg-foreground transition-transform duration-300",
-                isMenuOpen && "-translate-y-[7px] -rotate-45",
-              )}
-            />
-          </span>
-        </button>
+        <div className="flex items-center gap-2 lg:hidden">
+          <ThemeToggle />
+          <button
+            type="button"
+            className="surface-card-strong inline-flex h-11 w-11 items-center justify-center rounded-full border-border/60"
+            onClick={() => setIsMenuOpen((value) => !value)}
+            aria-expanded={isMenuOpen}
+            aria-label={isMenuOpen ? tHeader("closeMenu") : tHeader("openMenu")}
+          >
+            <span className="relative block h-4 w-5">
+              <span
+                className={cn(
+                  "absolute left-0 top-0 h-0.5 w-5 rounded-full bg-foreground transition-transform duration-300",
+                  isMenuOpen && "translate-y-[7px] rotate-45",
+                )}
+              />
+              <span
+                className={cn(
+                  "absolute left-0 top-[7px] h-0.5 w-5 rounded-full bg-foreground transition-opacity duration-300",
+                  isMenuOpen && "opacity-0",
+                )}
+              />
+              <span
+                className={cn(
+                  "absolute left-0 top-[14px] h-0.5 w-5 rounded-full bg-foreground transition-transform duration-300",
+                  isMenuOpen && "-translate-y-[7px] -rotate-45",
+                )}
+              />
+            </span>
+          </button>
+        </div>
       </Container>
 
       <div
         className={cn(
-          "overflow-hidden border-t border-border/40 bg-white/95 backdrop-blur-2xl transition-all duration-400 ease-out lg:hidden",
+          "overflow-hidden border-t border-border/40 bg-surface/95 backdrop-blur-2xl transition-all duration-400 ease-out lg:hidden",
           isMenuOpen
             ? "max-h-[calc(100svh-4.75rem)] opacity-100"
             : "max-h-0 border-t-transparent opacity-0",
@@ -165,8 +170,8 @@ export function Header() {
                   className={cn(
                     "rounded-[1.4rem] px-4 py-3.5 text-base font-medium transition-colors",
                     active
-                      ? "bg-foreground text-white shadow-[0_14px_28px_rgba(36,27,23,0.14)]"
-                      : "text-foreground/80 hover:bg-surface-muted/60 hover:text-foreground",
+                      ? "bg-contrast text-contrast-foreground shadow-[var(--shadow-soft)]"
+                      : "text-foreground/80 hover:bg-surface-muted/80 hover:text-foreground",
                   )}
                 >
                   {tNav(item.labelKey)}
@@ -182,7 +187,7 @@ export function Header() {
               <Link
                 href="/contact"
                 onClick={() => setIsMenuOpen(false)}
-                className="rounded-full bg-foreground px-6 py-3.5 text-center text-sm font-semibold text-white shadow-[0_10px_20px_rgba(36,27,23,0.18)] transition-all duration-200 hover:bg-primary-strong"
+                className="rounded-full bg-contrast px-6 py-3.5 text-center text-sm font-semibold text-contrast-foreground shadow-[var(--shadow-soft)] transition-all duration-200 hover:brightness-[1.02]"
               >
                 {tCommon("consultationCta")}
               </Link>

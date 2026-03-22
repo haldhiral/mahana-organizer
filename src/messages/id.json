@@ -8,6 +8,16 @@
     "openMenu": "Buka menu navigasi",
     "closeMenu": "Tutup menu navigasi"
   },
+  "theme": {
+    "label": "Tema",
+    "light": "Terang",
+    "dark": "Gelap",
+    "current": "Tema aktif: {theme}",
+    "switchTo": {
+      "light": "Ganti ke mode terang",
+      "dark": "Ganti ke mode gelap"
+    }
+  },
   "nav": {
     "home": "Beranda",
     "about": "Tentang",
@@ -35,6 +45,11 @@
     "quickLinks": "Navigasi singkat",
     "contact": "Kontak",
     "social": "Sosial",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "hoursLabel": "Jam respons",
+    "coverageLabel": "Cakupan",
+    "theme": "Tema",
     "hours": "Jam respons: {hours}",
     "coverage": "Melayani: {areas}",
     "copyright": "Hak cipta {year} Mahana Organizer. Seluruh hak dilindungi.",
@@ -566,7 +581,7 @@
     "placeholders": {
       "name": "Adelia Putri",
       "email": "nama@email.com",
-      "phone": "0812 3456 7890",
+      "phone": "0813-1800-6962",
       "eventLocation": "Jakarta Selatan",
       "message": "Tuliskan gambaran acara, jumlah tamu, vendor yang sudah dipilih, atau pertanyaan utama Anda."
     },

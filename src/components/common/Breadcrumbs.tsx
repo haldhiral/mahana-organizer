@@ -16,14 +16,14 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
               {isCurrentPage ? (
                 <span
                   aria-current="page"
-                  className="rounded-full border border-border/60 bg-white/55 px-3 py-1 text-foreground/78"
+                  className="surface-card rounded-full px-3 py-1 text-foreground/78"
                 >
                   {item.label}
                 </span>
               ) : (
                 <Link
                   href={item.href}
-                  className="rounded-full border border-transparent px-3 py-1 transition-colors hover:border-border/60 hover:bg-white/55 hover:text-primary"
+                  className="rounded-full border border-transparent px-3 py-1 transition-colors hover:border-border/60 hover:bg-surface/68 hover:text-primary"
                 >
                   {item.label}
                 </Link>

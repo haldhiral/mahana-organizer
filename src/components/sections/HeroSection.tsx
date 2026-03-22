@@ -50,7 +50,7 @@ export function HeroSection() {
                 />
               </div>
 
-              <div className="relative mt-8 overflow-hidden rounded-[1.8rem] border border-white/70 bg-white/72 p-5 shadow-[0_18px_40px_rgba(80,59,43,0.08)] sm:p-6">
+              <div className="surface-card relative mt-8 overflow-hidden rounded-[1.8rem] p-5 sm:p-6">
                 <div className="absolute -right-6 -top-6 h-20 w-20 rounded-full bg-champagne/20 blur-2xl" />
                 <p className="font-serif text-2xl leading-tight text-foreground">
                   {t("highlightTitle")}
@@ -64,7 +64,7 @@ export function HeroSection() {
                 {["planning", "coordination", "coverage"].map((item) => (
                   <div
                     key={item}
-                    className="glass-panel rounded-[1.5rem] border border-white/60 px-4 py-4 text-left text-sm leading-6 text-foreground/82 sm:text-center"
+                    className="glass-panel rounded-[1.5rem] border border-border/35 px-4 py-4 text-left text-sm leading-6 text-foreground/82 sm:text-center"
                   >
                     <span className="mb-2 block h-1.5 w-1.5 rounded-full bg-primary/70 sm:mx-auto" />
                     {t(`stats.${item}`)}

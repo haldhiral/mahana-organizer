@@ -25,7 +25,6 @@ import { isValidLocale } from "@/i18n/routing";
 import { buildMetadata } from "@/lib/seo";
 import {
   buildFaqSchema,
-  buildLocalBusinessSchema,
   buildOrganizationSchema,
 } from "@/lib/schema";
 
@@ -86,10 +85,6 @@ function HomePageContent({ locale }: { locale: AppLocale }) {
       <JsonLd
         data={[
           buildOrganizationSchema({
-            locale,
-            description: tMeta("description"),
-          }),
-          buildLocalBusinessSchema({
             locale,
             description: tMeta("description"),
           }),

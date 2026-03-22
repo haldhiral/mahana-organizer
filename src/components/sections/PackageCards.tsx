@@ -3,6 +3,7 @@ import { useLocale } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { buttonStyles } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
+import { CheckIcon, SparklesIcon } from "@/components/ui/icons";
 import { PremiumSectionShell } from "@/components/ui/PremiumSectionShell";
 import { getWeddingOfferings } from "@/data/offerings";
 import type { AppLocale } from "@/i18n/routing";
@@ -37,8 +38,8 @@ export function PackageCards({ preview = false, className }: PackageCardsProps) 
           <div className="flex items-start justify-between gap-4">
             <Badge className="self-start">{plan.badge}</Badge>
             {plan.featured ? (
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-primary">
-                <span className="h-1 w-1 rounded-full bg-primary" />
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-[var(--primary-soft-bg)] px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-primary">
+                <SparklesIcon className="h-3 w-3" />
                 {featuredLabel}
               </span>
             ) : null}
@@ -57,7 +58,7 @@ export function PackageCards({ preview = false, className }: PackageCardsProps) 
           <ul className="mt-5 grid flex-1 gap-3 text-sm leading-6 text-foreground/82">
             {plan.highlights.slice(0, preview ? 3 : undefined).map((item) => (
               <li key={item} className="flex items-start gap-3">
-                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
                 <span>{item}</span>
               </li>
             ))}

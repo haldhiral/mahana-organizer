@@ -39,8 +39,8 @@ export function PortfolioGrid() {
             className={cn(
               "rounded-full border px-4 py-2 text-[0.78rem] font-semibold uppercase tracking-[0.16em] transition-all duration-300 ease-out sm:text-sm",
               activeFilter === filter
-                ? "scale-[1.02] border-foreground bg-foreground text-white shadow-[0_14px_28px_rgba(36,27,23,0.16)]"
-                : "border-border-strong bg-white/72 text-foreground/80 hover:bg-white hover:text-foreground hover:shadow-[0_8px_18px_rgba(80,59,43,0.08)]",
+                ? "scale-[1.02] border-contrast/20 bg-contrast text-contrast-foreground shadow-[var(--shadow-soft)]"
+                : "surface-card border-border-strong text-foreground/80 hover:bg-surface-strong/92 hover:text-foreground hover:shadow-[var(--shadow-card)]",
             )}
           >
             {tPage(`filters.${filter}`)}

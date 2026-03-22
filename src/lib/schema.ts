@@ -18,15 +18,19 @@ export function buildOrganizationSchema({
   locale: AppLocale;
   description: string;
 }): JsonLdObject {
+  const sameAs = Object.values(siteConfig.socialLinks);
+
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": `${siteConfig.domain}#organization`,
     name: siteConfig.name,
     description,
-    url: getLocalizedUrl(locale),
+    url: siteConfig.domain,
     logo: getAbsoluteUrl(siteConfig.logoPath),
-    sameAs: Object.values(siteConfig.socialLinks),
+    areaServed: getAreaServed(),
+    inLanguage: locale,
+    ...(sameAs.length > 0 ? { sameAs } : {}),
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer support",
@@ -45,18 +49,20 @@ export function buildLocalBusinessSchema({
   locale: AppLocale;
   description: string;
 }): JsonLdObject {
+  const sameAs = Object.values(siteConfig.socialLinks);
+
   return {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "@id": `${siteConfig.domain}#localbusiness`,
     name: siteConfig.name,
     description,
-    url: getLocalizedUrl(locale),
+    url: siteConfig.domain,
     image: getAbsoluteUrl(siteConfig.ogImagePath),
     telephone: siteConfig.phoneNumber,
     email: siteConfig.email,
-    priceRange: "$$",
     areaServed: getAreaServed(),
+    inLanguage: locale,
     address: {
       "@type": "PostalAddress",
       streetAddress: siteConfig.address.streetAddress,
@@ -65,7 +71,7 @@ export function buildLocalBusinessSchema({
       postalCode: siteConfig.address.postalCode,
       addressCountry: siteConfig.address.country,
     },
-    sameAs: Object.values(siteConfig.socialLinks),
+    ...(sameAs.length > 0 ? { sameAs } : {}),
   };
 }
 

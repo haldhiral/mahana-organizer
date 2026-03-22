@@ -169,7 +169,11 @@ export function ContactForm() {
           </Button>
           {statusMessage ? (
             <p
-              className={`mt-4 rounded-[1.2rem] border px-4 py-3 text-sm leading-7 ${status === "success" ? "border-success/30 bg-success/5 text-success" : "border-[#9b4c4c]/30 bg-[#9b4c4c]/5 text-[#9b4c4c]"}`}
+              className={`mt-4 rounded-[1.2rem] border px-4 py-3 text-sm leading-7 ${
+                status === "success"
+                  ? "border-success/30 bg-success/8 text-success"
+                  : "border-danger/30 bg-danger/8 text-danger"
+              }`}
               aria-live="polite"
               role="status"
             >
@@ -194,7 +198,7 @@ function renderError(
   }
 
   return (
-    <p id={`${field}-error`} className="mt-2 text-sm text-[#9b4c4c]">
+    <p id={`${field}-error`} className="mt-2 text-sm text-danger">
       {t(`errors.${error}`)}
     </p>
   );
@@ -229,7 +233,7 @@ function Field({
     "aria-invalid": Boolean(error),
     "aria-describedby": error ? `${field}-error` : undefined,
     className:
-      "w-full rounded-[1.45rem] border border-border-strong/60 bg-white/80 px-5 py-4 text-foreground shadow-[0_10px_24px_rgba(80,59,43,0.04)] outline-none transition-all duration-250 focus:border-primary/70 focus:bg-white focus:shadow-[0_18px_38px_rgba(80,59,43,0.1)] focus:ring-1 focus:ring-primary/20",
+      "field-surface w-full rounded-[1.45rem] px-5 py-4 text-foreground transition-all duration-250 focus:border-primary/70 focus:shadow-[var(--shadow-card)] focus:ring-1 focus:ring-primary/20",
     onChange: (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
       onChange(field, event.target.value),
   };

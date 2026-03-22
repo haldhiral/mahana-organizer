@@ -6,6 +6,7 @@ import { Container } from "@/components/ui/Container";
 import { PremiumSectionShell } from "@/components/ui/PremiumSectionShell";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 import { buttonStyles } from "@/components/ui/Button";
+import { MapPinIcon, SparklesIcon, WhatsAppIcon } from "@/components/ui/icons";
 
 type CTASectionProps = {
   eyebrow: string;
@@ -26,9 +27,18 @@ export function CTASection({
 }: CTASectionProps) {
   const tCommon = useTranslations("common");
   const trustPoints = [
-    tCommon("consultationCta"),
-    tCommon("whatsappCta"),
-    siteConfig.serviceAreas.join(" / "),
+    {
+      icon: SparklesIcon,
+      label: tCommon("consultationCta"),
+    },
+    {
+      icon: WhatsAppIcon,
+      label: tCommon("whatsappCta"),
+    },
+    {
+      icon: MapPinIcon,
+      label: siteConfig.serviceAreas.join(" / "),
+    },
   ];
 
   return (
@@ -56,15 +66,21 @@ export function CTASection({
             </div>
             <div className="gold-divider mt-9" />
             <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {trustPoints.map((item) => (
+              {trustPoints.map((item) => {
+                const Icon = item.icon;
+
+                return (
                 <span
-                  key={item}
-                  className="inline-flex min-w-0 items-center gap-2 rounded-full border border-white/70 bg-white/72 px-4 py-2.5 text-sm text-foreground/78 shadow-[0_10px_24px_rgba(80,59,43,0.08)] backdrop-blur-sm"
+                  key={item.label}
+                  className="surface-card inline-flex min-w-0 items-center gap-2 rounded-full px-4 py-2.5 text-sm text-foreground/78"
                 >
-                  <span className="h-1.5 w-1.5 rounded-full bg-primary/70" />
-                  {item}
+                  <span className="icon-chip h-7 w-7 shrink-0">
+                    <Icon className="h-3.5 w-3.5" />
+                  </span>
+                  {item.label}
                 </span>
-              ))}
+                );
+              })}
             </div>
           </div>
         </PremiumSectionShell>

@@ -12,6 +12,7 @@ import { Badge } from "@/components/ui/Badge";
 import { buttonStyles } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { ElegantImagePlaceholder } from "@/components/ui/ElegantImagePlaceholder";
+import { CheckIcon, PlusIcon, SparklesIcon } from "@/components/ui/icons";
 import { PremiumSectionShell } from "@/components/ui/PremiumSectionShell";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 import { getWeddingOfferings } from "@/data/offerings";
@@ -119,8 +120,8 @@ function PackagesPageContent({ locale }: { locale: AppLocale }) {
                   <div className="flex flex-wrap items-center gap-2">
                     <Badge>{card.name}</Badge>
                     {card.featured ? (
-                      <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-primary">
-                        <span className="h-1 w-1 rounded-full bg-primary" />
+                      <span className="inline-flex items-center gap-1.5 rounded-full bg-[var(--primary-soft-bg)] px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-primary">
+                        <SparklesIcon className="h-3 w-3" />
                         {featuredLabel}
                       </span>
                     ) : null}
@@ -135,7 +136,7 @@ function PackagesPageContent({ locale }: { locale: AppLocale }) {
                   title={card.name}
                   note={card.summary}
                   ratio={index === 1 ? "portrait" : "landscape"}
-                  className="mt-5 rounded-[1.8rem] border-white/70 bg-white/72"
+                  className="surface-card mt-5 rounded-[1.8rem]"
                 />
 
                 <div className="mt-5 grid gap-3 sm:grid-cols-3">
@@ -146,7 +147,7 @@ function PackagesPageContent({ locale }: { locale: AppLocale }) {
                   ].map((item) => (
                     <div
                       key={item}
-                      className="rounded-[1.3rem] border border-white/70 bg-white/72 px-4 py-3 text-sm leading-6 text-foreground/82"
+                      className="surface-card rounded-[1.3rem] px-4 py-3 text-sm leading-6 text-foreground/82"
                     >
                       {item}
                     </div>
@@ -156,7 +157,7 @@ function PackagesPageContent({ locale }: { locale: AppLocale }) {
                 <ul className="mt-5 grid gap-3 text-sm leading-6 text-muted-foreground">
                   {card.features.map((item) => (
                     <li key={item} className="flex gap-3">
-                      <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary" />
+                      <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
                       <span>{item}</span>
                     </li>
                   ))}
@@ -202,7 +203,7 @@ function PackagesPageContent({ locale }: { locale: AppLocale }) {
                 {offerings.planner.featureGroups.map((group) => (
                   <div
                     key={group.title}
-                    className="rounded-[1.8rem] border border-white/70 bg-white/72 p-5"
+                    className="surface-card rounded-[1.8rem] p-5"
                   >
                     <p className="font-serif text-[1.6rem] leading-tight text-foreground">
                       {group.title}
@@ -210,7 +211,7 @@ function PackagesPageContent({ locale }: { locale: AppLocale }) {
                     <ul className="mt-4 grid gap-3 text-sm leading-7 text-muted-foreground sm:text-base">
                       {group.items.map((item) => (
                         <li key={item} className="flex gap-3">
-                          <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary" />
+                          <CheckIcon className="mt-1 h-4 w-4 shrink-0 text-primary" />
                           <span>{item}</span>
                         </li>
                       ))}
@@ -266,13 +267,15 @@ function PackagesPageContent({ locale }: { locale: AppLocale }) {
                   <details
                     key={section.id}
                     open={index === 0}
-                    className="rounded-[1.9rem] border border-border/70 bg-white/72 p-5 transition-colors duration-200 open:bg-white/50"
+                    className="rounded-[1.9rem] border border-border/70 bg-surface/76 p-5 transition-colors duration-200 open:bg-surface-strong/80"
                   >
                     <summary className="flex cursor-pointer list-none items-center justify-between gap-4">
                       <span className="font-serif text-[1.55rem] leading-tight text-foreground sm:text-[1.7rem]">
                         {section.title}
                       </span>
-                      <span className="accordion-icon shrink-0">+</span>
+                      <span className="accordion-icon shrink-0">
+                        <PlusIcon className="h-4 w-4" />
+                      </span>
                     </summary>
                     <span className="gold-divider mt-5 inline-block" aria-hidden="true" />
                     <div className="mt-4 grid gap-5 xl:grid-cols-[0.72fr_1.28fr]">
@@ -287,7 +290,7 @@ function PackagesPageContent({ locale }: { locale: AppLocale }) {
                         <ul className="grid gap-3 text-sm leading-7 text-muted-foreground sm:text-base">
                           {section.details.map((item) => (
                             <li key={item} className="flex gap-3">
-                              <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary" />
+                              <CheckIcon className="mt-1 h-4 w-4 shrink-0 text-primary" />
                               <span>{item}</span>
                             </li>
                           ))}
@@ -302,7 +305,7 @@ function PackagesPageContent({ locale }: { locale: AppLocale }) {
                   </details>
                 ))}
 
-                <div className="rounded-[1.8rem] border border-border/70 bg-white/72 p-5 text-sm leading-7 text-muted-foreground sm:text-base">
+                <div className="surface-card rounded-[1.8rem] p-5 text-sm leading-7 text-muted-foreground sm:text-base">
                   {offerings.exclusive.organizerInclusion}
                 </div>
               </div>

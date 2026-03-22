@@ -14,13 +14,13 @@ type ButtonStyleOptions = {
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    "border border-primary/70 bg-[linear-gradient(135deg,#9a7356_0%,#785338_100%)] text-primary-foreground shadow-[0_18px_38px_rgba(141,103,75,0.26)] hover:border-primary-strong hover:bg-[linear-gradient(135deg,#8d684c_0%,#68442b_100%)] hover:shadow-[0_24px_52px_rgba(109,74,48,0.24)]",
+    "border border-primary/70 bg-[linear-gradient(135deg,var(--primary)_0%,var(--primary-strong)_100%)] text-primary-foreground shadow-[var(--shadow-card)] hover:border-primary-strong hover:brightness-[1.02] hover:shadow-[var(--shadow-elevated)]",
   secondary:
-    "border border-foreground/80 bg-[linear-gradient(135deg,#3a2d26_0%,#221917_100%)] text-white shadow-[0_18px_34px_rgba(36,27,23,0.18)] hover:bg-[linear-gradient(135deg,#312620_0%,#1b1512_100%)] hover:shadow-[0_24px_46px_rgba(36,27,23,0.22)]",
+    "border border-contrast/20 bg-contrast text-contrast-foreground shadow-[var(--shadow-card)] hover:brightness-[1.02] hover:shadow-[var(--shadow-elevated)]",
   outline:
-    "border border-border-strong/80 bg-white/80 text-foreground shadow-[0_12px_28px_rgba(80,59,43,0.08)] hover:border-primary/45 hover:bg-white hover:shadow-[0_20px_38px_rgba(80,59,43,0.12)]",
+    "border border-border-strong/80 bg-surface/80 text-foreground shadow-[var(--shadow-soft)] hover:border-primary/45 hover:bg-surface-strong/92 hover:shadow-[var(--shadow-card)]",
   ghost:
-    "border border-transparent bg-transparent text-foreground/80 hover:bg-white/60 hover:text-foreground",
+    "border border-transparent bg-transparent text-foreground/80 hover:bg-surface/72 hover:text-foreground",
   whatsapp:
     "border border-[#1f6f54]/85 bg-[linear-gradient(135deg,#2a8667_0%,#1f6f54_100%)] text-white shadow-[0_16px_34px_rgba(31,111,84,0.24)] hover:bg-[linear-gradient(135deg,#24785d_0%,#195944_100%)] hover:shadow-[0_22px_42px_rgba(31,111,84,0.28)]",
 };
