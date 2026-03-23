@@ -7,7 +7,7 @@ import { CTASection } from "@/components/common/CTASection";
 import { PageIntro } from "@/components/common/PageIntro";
 import { SectionHeading } from "@/components/common/SectionHeading";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { TestimonialCards } from "@/components/sections/TestimonialCards";
+import { TestimonialCarousel } from "@/components/sections/TestimonialCards";
 import { Container } from "@/components/ui/Container";
 import { PremiumSectionShell } from "@/components/ui/PremiumSectionShell";
 import { isValidLocale } from "@/i18n/routing";
@@ -73,7 +73,7 @@ function TestimonialsPageContent({ locale }: { locale: AppLocale }) {
 
       <section className="section-pad pt-0">
         <Container>
-          <TestimonialCards />
+          <TestimonialCarousel />
         </Container>
       </section>
 

@@ -11,7 +11,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { PackageCards } from "@/components/sections/PackageCards";
 import { ServiceCards } from "@/components/sections/ServiceCards";
-import { TestimonialCards } from "@/components/sections/TestimonialCards";
+import { TestimonialCarousel } from "@/components/sections/TestimonialCards";
 import { Badge } from "@/components/ui/Badge";
 import { buttonStyles } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
@@ -221,7 +221,7 @@ function HomePageContent({ locale }: { locale: AppLocale }) {
               {tHome("testimonials.cta")}
             </Link>
           </div>
-          <TestimonialCards limit={3} featuredOnly className="lg:grid-cols-3" />
+          <TestimonialCarousel limit={3} featuredOnly />
         </Container>
       </section>
 

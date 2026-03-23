@@ -12,6 +12,7 @@ type EditorialImageProps = {
   caption?: string;
   ratio?: EditorialImageRatio;
   priority?: boolean;
+  variant?: "default" | "bare";
   className?: string;
   imageClassName?: string;
   sizes?: string;
@@ -33,6 +34,7 @@ export function EditorialImage({
   caption,
   ratio = "landscape",
   priority = false,
+  variant = "default",
   className,
   imageClassName,
   sizes = "(min-width: 1280px) 32vw, (min-width: 768px) 46vw, 100vw",
@@ -41,13 +43,15 @@ export function EditorialImage({
   return (
     <div
       className={cn(
-        "surface-card-strong group relative overflow-hidden rounded-[2rem] p-3",
+        "group relative overflow-hidden",
+        variant === "default" ? "surface-card-strong rounded-[2rem] p-3" : "rounded-full",
         className,
       )}
     >
       <div
         className={cn(
-          "relative overflow-hidden rounded-[1.5rem] bg-background-alt",
+          "relative overflow-hidden bg-background-alt",
+          variant === "default" ? "rounded-[1.5rem]" : "rounded-full",
           ratioClasses[ratio],
         )}
       >
@@ -60,6 +64,7 @@ export function EditorialImage({
             sizes={sizes}
             className={cn(
               "object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]",
+              variant === "bare" && "group-hover:scale-100",
               imageClassName,
             )}
           />
@@ -91,8 +96,10 @@ export function EditorialImage({
           </div>
         )}
 
-        <div className="image-overlay absolute inset-0" />
-        <div className="pointer-events-none absolute inset-[12px] rounded-[calc(1.5rem-2px)] border border-border/40" />
+        {variant === "default" ? <div className="image-overlay absolute inset-0" /> : null}
+        {variant === "default" ? (
+          <div className="pointer-events-none absolute inset-[12px] rounded-[calc(1.5rem-2px)] border border-border/40" />
+        ) : null}
 
         {label ? (
           <div className="image-frost absolute left-4 top-4 rounded-full px-4 py-2 text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-foreground/78">

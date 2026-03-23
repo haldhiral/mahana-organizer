@@ -7,6 +7,7 @@ type ElegantImagePlaceholderProps = {
   title: string;
   note?: string;
   ratio?: "portrait" | "landscape" | "wide" | "square" | "tall";
+  variant?: "default" | "avatar";
   src?: string;
   className?: string;
   imageClassName?: string;
@@ -19,21 +20,25 @@ export function ElegantImagePlaceholder({
   title,
   note,
   ratio = "landscape",
+  variant = "default",
   src,
   className,
   imageClassName,
   sizes,
 }: ElegantImagePlaceholderProps) {
+  const isAvatar = variant === "avatar";
+
   return (
     <EditorialImage
       alt={alt}
       src={src}
-      label={label}
+      label={isAvatar ? undefined : label}
       ratio={ratio}
+      variant={isAvatar ? "bare" : "default"}
       className={className}
       imageClassName={imageClassName}
       sizes={sizes}
-      overlay={
+      overlay={isAvatar ? undefined : (
         <div className="image-frost absolute inset-x-4 bottom-4 rounded-[1.5rem] px-5 py-4">
           <p className="text-[0.68rem] font-semibold uppercase tracking-[0.26em] text-primary">
             {label}
@@ -50,7 +55,7 @@ export function ElegantImagePlaceholder({
             </p>
           ) : null}
         </div>
-      }
+      )}
     />
   );
 }
