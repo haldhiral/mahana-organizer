@@ -7,6 +7,7 @@ import { useTranslations } from "next-intl";
 import { buttonStyles } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
+import { useTheme } from "@/components/providers/ThemeProvider";
 import { siteConfig } from "@/config/site";
 import { navigationItems } from "@/config/navigation";
 import { Link, usePathname } from "@/i18n/navigation";
@@ -27,6 +28,7 @@ export function Header() {
   const tNav = useTranslations("nav");
   const tCommon = useTranslations("common");
   const tHeader = useTranslations("header");
+  const { theme } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -56,6 +58,12 @@ export function Header() {
 
   const solidHeader = pathname !== "/" || isScrolled || isMenuOpen;
 
+  // Determine which logo variant to show:
+  // - On dark hero (homepage top, not scrolled): always use light logo
+  // - On solid header: use dark logo in light theme, light logo in dark theme
+  const useLightLogo = !solidHeader || theme === "dark";
+  const logoSrc = useLightLogo ? "/logo-mark-light.svg" : "/logo-mark-dark.svg";
+
   return (
     <header
       className={cn(
@@ -74,7 +82,7 @@ export function Header() {
               : "border border-hero-border bg-hero-bg-subtle/40 backdrop-blur-sm",
           )}>
             <Image
-              src="/logo-mark.svg"
+              src={logoSrc}
               alt={siteConfig.name}
               width={34}
               height={34}
@@ -140,7 +148,12 @@ export function Header() {
           <ThemeToggle />
           <button
             type="button"
-            className="surface-card-strong inline-flex h-11 w-11 items-center justify-center rounded-full border-border/60"
+            className={cn(
+              "inline-flex h-11 w-11 items-center justify-center rounded-full border transition-all duration-300",
+              solidHeader
+                ? "surface-card-strong border-border/60"
+                : "border-hero-border bg-hero-bg-subtle/40 backdrop-blur-sm",
+            )}
             onClick={() => setIsMenuOpen((value) => !value)}
             aria-expanded={isMenuOpen}
             aria-label={isMenuOpen ? tHeader("closeMenu") : tHeader("openMenu")}
@@ -148,20 +161,23 @@ export function Header() {
             <span className="relative block h-4 w-5">
               <span
                 className={cn(
-                  "absolute left-0 top-0 h-0.5 w-5 rounded-full bg-foreground transition-transform duration-300",
-                  isMenuOpen && "translate-y-[7px] rotate-45",
+                  "absolute left-0 top-0 h-0.5 w-5 rounded-full transition-transform duration-300",
+                  solidHeader ? "bg-foreground" : "bg-hero-text",
+                  isMenuOpen && "translate-y-[7px] rotate-45 !bg-foreground",
                 )}
               />
               <span
                 className={cn(
-                  "absolute left-0 top-[7px] h-0.5 w-5 rounded-full bg-foreground transition-opacity duration-300",
+                  "absolute left-0 top-[7px] h-0.5 w-5 rounded-full transition-opacity duration-300",
+                  solidHeader ? "bg-foreground" : "bg-hero-text",
                   isMenuOpen && "opacity-0",
                 )}
               />
               <span
                 className={cn(
-                  "absolute left-0 top-[14px] h-0.5 w-5 rounded-full bg-foreground transition-transform duration-300",
-                  isMenuOpen && "-translate-y-[7px] -rotate-45",
+                  "absolute left-0 top-[14px] h-0.5 w-5 rounded-full transition-transform duration-300",
+                  solidHeader ? "bg-foreground" : "bg-hero-text",
+                  isMenuOpen && "-translate-y-[7px] -rotate-45 !bg-foreground",
                 )}
               />
             </span>
