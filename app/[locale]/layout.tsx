@@ -70,6 +70,16 @@ export async function generateMetadata({
     metadataBase: new URL(siteConfig.domain),
     applicationName: siteConfig.name,
     category: siteConfig.category,
+    icons: {
+      icon: [
+        { url: "/favicon.ico" },
+        { url: "/favicon-48x48.png", sizes: "48x48", type: "image/png" },
+      ],
+      shortcut: "/favicon.ico",
+      apple: [
+        { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+      ],
+    },
     title: {
       default: siteConfig.name,
       template: `%s | ${siteConfig.name}`,

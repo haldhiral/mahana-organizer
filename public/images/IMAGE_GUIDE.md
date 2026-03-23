@@ -61,5 +61,5 @@ General rule:
 
 ## Browser tab icon
 
-- Generated icon route: `app/icon.tsx`
-- Apple icon route: `app/apple-icon.tsx`
+- Favicon source: `public/favicon.svg`
+- Public icon assets: `public/favicon.ico`, `public/favicon-48x48.png`, `public/apple-icon.png`, `public/icon-512x512.png`
