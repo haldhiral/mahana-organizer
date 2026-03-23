@@ -129,6 +129,15 @@ function PackagesPageContent({ locale }: { locale: AppLocale }) {
                   <p className="text-sm font-semibold text-foreground/82">{card.price}</p>
                 </div>
 
+                <div className="mt-4 flex items-center gap-2">
+                  <span className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-1.5 text-[0.72rem] font-bold uppercase tracking-[0.18em] text-primary-foreground">
+                    {card.tierLabel}
+                  </span>
+                  <span className="text-sm font-medium text-foreground/78">
+                    {card.tierSize}
+                  </span>
+                </div>
+
                 <ElegantImagePlaceholder
                   alt={card.name}
                   src={card.imageSrc}

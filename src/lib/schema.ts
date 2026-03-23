@@ -11,6 +11,17 @@ function getAreaServed(areas: readonly string[] = siteConfig.serviceAreas) {
   }));
 }
 
+export function buildWebsiteSchema(): JsonLdObject {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${siteConfig.domain}#website`,
+    url: siteConfig.domain,
+    name: siteConfig.name,
+    alternateName: siteConfig.shortName,
+  };
+}
+
 export function buildOrganizationSchema({
   locale,
   description,

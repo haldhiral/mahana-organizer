@@ -137,7 +137,7 @@ export function Header() {
             href="/contact"
             className={cn(
               buttonStyles(),
-              !solidHeader && "border-hero-accent/40 bg-[linear-gradient(135deg,var(--hero-accent)_0%,#b8956e_100%)] text-[#1a1210] shadow-[0_12px_32px_rgba(212,184,150,0.15)] hover:border-hero-accent/60 hover:shadow-[0_16px_40px_rgba(212,184,150,0.2)]",
+              !solidHeader && "border-hero-accent/40 bg-[linear-gradient(135deg,var(--hero-accent)_0%,#A8893E_100%)] text-[#1A2536] shadow-[0_12px_32px_rgba(201,169,110,0.15)] hover:border-hero-accent/60 hover:shadow-[0_16px_40px_rgba(201,169,110,0.2)]",
             )}
           >
             {tCommon("consultationCta")}

@@ -100,7 +100,17 @@
       "traditional": "Tradisional",
       "family": "Berfokus pada keluarga",
       "akad": "Akad",
-      "reception": "Resepsi"
+      "reception": "Resepsi",
+      "jagakarsa": "Jagakarsa",
+      "joyfulReception": "Resepsi meriah",
+      "structuredPlanning": "Perencanaan terstruktur",
+      "recommended": "Direkomendasikan",
+      "responsive": "Responsif",
+      "dreamWedding": "Pernikahan impian",
+      "lakeside": "Lakeside",
+      "attentiveCrew": "Crew yang cekatan",
+      "caringTeam": "Tim yang care",
+      "familySupport": "Dukungan keluarga"
     }
   },
   "areasSection": {
@@ -484,25 +494,30 @@
       "description": "Setiap cerita di sini mencerminkan apa yang membuat pengalaman bersama Mahana terasa berbeda: perhatian yang tulus, koordinasi yang bijak, dan proses yang membuat pasangan merasa tenang."
     },
     "items": {
-      "nadia-farhan": {
-        "quote": "Kami merasa setiap keputusan jadi lebih ringan karena tim Mahana selalu memberi arahan yang jelas tanpa membuat kami merasa terburu-buru.",
-        "name": "Nadia & Farhan",
-        "context": "Pernikahan ballroom, Jakarta"
+      "ulfah-bambang": {
+        "quote": "Kami merasa sangat terbantu dari rundown, technical meeting, hingga jalannya acara di hari-H. Tim Mahana Organizer super helpful, ramah, penuh inisiatif, dan berhasil membuat acara terasa hidup, seru, dan berjalan lancar.",
+        "name": "Ulfah & Bambang",
+        "context": "Sepiring Nusantara, Bogor"
       },
-      "clara-adrian": {
-        "quote": "Saat venue outdoor mulai berubah karena cuaca, tim tetap tenang dan semuanya terasa tertangani tanpa membuat keluarga panik.",
-        "name": "Clara & Adrian",
-        "context": "Perayaan taman, Bogor"
+      "fika-ary": {
+        "quote": "Acara kami terasa jauh lebih lancar karena tim Mahana Organizer bekerja dengan sangat terstruktur, komunikatif, dan enak diajak diskusi sejak sebelum sampai setelah acara. Sangat recommended untuk calon pengantin lainnya.",
+        "name": "Fika & Ary",
+        "context": "Islamic Center, Jagakarsa"
       },
-      "alya-reza": {
-        "quote": "Kami suka cara Mahana menjaga acara keluarga tetap hangat tapi rundown-nya tetap disiplin. Itu kombinasi yang sulit dicari.",
-        "name": "Alya & Reza",
-        "context": "Acara keluarga, Depok"
+      "winda-zico": {
+        "quote": "Mahana Organizer sangat membantu mengoordinir acara kami dari persiapan hingga hari-H. Timnya fast response, solutif, dan mampu mengeksekusi kebutuhan kami dengan baik sesuai harapan.",
+        "name": "Winda & Zico",
+        "context": "Islamic Center, Jagakarsa"
       },
-      "mei-bimo": {
-        "quote": "Vendor-vendor terasa bekerja dalam ritme yang sama karena tim organizer benar-benar menguasai detail kecil yang sering luput.",
-        "name": "Mei & Bimo",
-        "context": "Resepsi modern, Jakarta"
+      "mela-ayub": {
+        "quote": "Dari persiapan sebelum hari-H sampai hari pernikahan, semua rangkaian acara berjalan sesuai rencana. Crew Mahana Organizer sangat cekatan, sabar, dan membantu kami di setiap prosesi.",
+        "name": "Mela & Ayub",
+        "context": "Nuansa Cafe Lakeside, Bogor"
+      },
+      "mega-syahrul": {
+        "quote": "Kami sangat puas dengan pelayanan Mahana Organizer. Seluruh tim terasa care, penuh inisiatif, dan membantu acara kami berjalan sampai selesai dengan tenang.",
+        "name": "Mega & Syahrul",
+        "context": "Bogor"
       }
     },
     "trust": {

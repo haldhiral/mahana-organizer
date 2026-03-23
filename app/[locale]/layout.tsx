@@ -37,8 +37,8 @@ const inter = Inter({
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f8f1ea" },
-    { media: "(prefers-color-scheme: dark)", color: "#1b1513" },
+    { media: "(prefers-color-scheme: light)", color: siteConfig.theme.lightColor },
+    { media: "(prefers-color-scheme: dark)", color: siteConfig.theme.darkColor },
   ],
   colorScheme: "light dark",
 };
@@ -83,9 +83,6 @@ export async function generateMetadata({
       address: false,
       email: false,
       telephone: false,
-    },
-    icons: {
-      icon: "/icon.svg",
     },
     openGraph: {
       title: siteConfig.name,

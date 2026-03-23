@@ -26,6 +26,7 @@ import { buildMetadata } from "@/lib/seo";
 import {
   buildFaqSchema,
   buildOrganizationSchema,
+  buildWebsiteSchema,
 } from "@/lib/schema";
 
 type PageProps = {
@@ -84,6 +85,7 @@ function HomePageContent({ locale }: { locale: AppLocale }) {
     <>
       <JsonLd
         data={[
+          buildWebsiteSchema(),
           buildOrganizationSchema({
             locale,
             description: tMeta("description"),

@@ -61,5 +61,5 @@ General rule:
 
 ## Browser tab icon
 
-- Icon file: `app/icon.svg`
-- Fallback icon: `app/favicon.ico`
+- Generated icon route: `app/icon.tsx`
+- Apple icon route: `app/apple-icon.tsx`

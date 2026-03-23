@@ -33,7 +33,10 @@ export function TestimonialCards({
         <PremiumSectionShell
           key={item.id}
           tone={index % 2 === 0 ? "soft" : "rose"}
-          className="panel-hover flex h-full flex-col rounded-[2rem] p-5 sm:p-7"
+          className={cn(
+            "panel-hover flex h-full flex-col rounded-[2rem] p-5 sm:p-7",
+            items.length % 2 !== 0 && index === items.length - 1 && "lg:col-span-2",
+          )}
         >
           <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:gap-5">
             <ElegantImagePlaceholder

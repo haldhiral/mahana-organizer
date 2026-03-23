@@ -7,166 +7,166 @@
     serif;
   --font-body: var(--font-inter, "Inter"), "Avenir Next", "Segoe UI",
     "Helvetica Neue", Helvetica, sans-serif;
-  --background: #f8f1ea;
-  --background-alt: #f2e6db;
-  --foreground: #241a17;
-  --surface: rgba(255, 251, 247, 0.9);
-  --surface-strong: #fffdfa;
-  --surface-muted: #f7ede4;
-  --card: rgba(255, 252, 248, 0.94);
-  --card-foreground: #2c201c;
-  --muted: #6f5f55;
-  --muted-strong: #54463d;
-  --border: #ebdacb;
-  --border-strong: #d9c0a8;
-  --primary: #8d674b;
-  --primary-strong: #6d4a30;
-  --primary-foreground: #fffaf5;
-  --primary-soft-bg: rgba(141, 103, 75, 0.08);
-  --primary-soft-border: rgba(141, 103, 75, 0.2);
-  --accent: #cfaba6;
-  --accent-foreground: #312420;
-  --rose: #e1c2bc;
-  --champagne: #dcc09e;
-  --sand: #efe2d3;
-  --contrast: #2b1d19;
-  --contrast-foreground: #fff8f1;
+  --background: #FFF8F0;
+  --background-alt: #F5EDE4;
+  --foreground: #1C2A3A;
+  --surface: rgba(255, 252, 247, 0.92);
+  --surface-strong: #FFFDF9;
+  --surface-muted: #F5EDE4;
+  --card: rgba(255, 253, 249, 0.94);
+  --card-foreground: #1C2A3A;
+  --muted: #6B7C8E;
+  --muted-strong: #4A5E72;
+  --border: #DDD5CC;
+  --border-strong: #C5B8AB;
+  --primary: #2C3E50;
+  --primary-strong: #1A2A3A;
+  --primary-foreground: #FFF8F0;
+  --primary-soft-bg: rgba(44, 62, 80, 0.07);
+  --primary-soft-border: rgba(44, 62, 80, 0.18);
+  --accent: #D4A9A2;
+  --accent-foreground: #1C2A3A;
+  --rose: #E4C4BE;
+  --champagne: #C9A96E;
+  --sand: #EDE5D8;
+  --contrast: #2C3E50;
+  --contrast-foreground: #FFF8F0;
   --success: #1f6f54;
   --danger: #a95a58;
-  --placeholder: rgba(109, 95, 84, 0.6);
-  --selection: rgba(201, 158, 154, 0.36);
-  --hero-bg: #1e1412;
-  --hero-bg-subtle: #2a1e1a;
-  --hero-text: #faf3ec;
-  --hero-muted: rgba(250, 243, 236, 0.58);
-  --hero-accent: #d4b896;
-  --hero-glow: rgba(212, 184, 150, 0.12);
-  --hero-border: rgba(212, 184, 150, 0.15);
+  --placeholder: rgba(75, 94, 114, 0.55);
+  --selection: rgba(44, 62, 80, 0.18);
+  --hero-bg: #1A2536;
+  --hero-bg-subtle: #243247;
+  --hero-text: #FFF8F0;
+  --hero-muted: rgba(255, 248, 240, 0.58);
+  --hero-accent: #C9A96E;
+  --hero-glow: rgba(201, 169, 110, 0.12);
+  --hero-border: rgba(201, 169, 110, 0.18);
   --page-gradient:
-    radial-gradient(circle at top left, rgba(220, 192, 158, 0.25), transparent 24%),
-    radial-gradient(circle at 86% 8%, rgba(207, 171, 166, 0.18), transparent 22%),
-    linear-gradient(180deg, #fffdfa 0%, #fbf4ee 34%, #f4e7db 100%);
+    radial-gradient(circle at top left, rgba(201, 169, 110, 0.16), transparent 24%),
+    radial-gradient(circle at 86% 8%, rgba(212, 169, 162, 0.12), transparent 22%),
+    linear-gradient(180deg, #FFFDF9 0%, #FFF8F0 34%, #F5EDE4 100%);
   --hero-mesh-bg:
-    radial-gradient(circle at 18% 18%, rgba(207, 171, 166, 0.28), transparent 23%),
-    radial-gradient(circle at 78% 12%, rgba(220, 192, 158, 0.34), transparent 23%),
-    radial-gradient(circle at 62% 78%, rgba(141, 103, 75, 0.14), transparent 28%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(250, 242, 235, 0.74));
+    radial-gradient(circle at 18% 18%, rgba(212, 169, 162, 0.22), transparent 23%),
+    radial-gradient(circle at 78% 12%, rgba(201, 169, 110, 0.26), transparent 23%),
+    radial-gradient(circle at 62% 78%, rgba(44, 62, 80, 0.10), transparent 28%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(255, 248, 240, 0.74));
   --panel-soft-bg:
-    linear-gradient(180deg, rgba(255, 254, 252, 0.96), rgba(255, 247, 240, 0.9));
+    linear-gradient(180deg, rgba(255, 254, 252, 0.96), rgba(255, 248, 240, 0.9));
   --panel-rose-bg:
     linear-gradient(180deg, rgba(255, 251, 249, 0.94), rgba(248, 236, 232, 0.86));
   --panel-champagne-bg:
-    linear-gradient(180deg, rgba(255, 253, 248, 0.92), rgba(248, 238, 222, 0.84));
+    linear-gradient(180deg, rgba(255, 253, 248, 0.92), rgba(248, 240, 226, 0.84));
   --panel-contrast-bg:
-    linear-gradient(180deg, rgba(52, 39, 33, 0.96), rgba(31, 24, 21, 0.94));
+    linear-gradient(180deg, rgba(44, 62, 80, 0.96), rgba(26, 42, 58, 0.94));
   --panel-glass-bg:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(255, 248, 242, 0.7));
+    linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(255, 248, 240, 0.7));
   --panel-shell-bg:
-    linear-gradient(180deg, rgba(255, 253, 250, 0.82), rgba(252, 244, 236, 0.76));
-  --panel-soft-border: rgba(217, 192, 168, 0.45);
-  --panel-glass-border: rgba(217, 192, 168, 0.34);
-  --panel-shell-border: rgba(217, 192, 168, 0.28);
+    linear-gradient(180deg, rgba(255, 253, 250, 0.82), rgba(255, 248, 240, 0.76));
+  --panel-soft-border: rgba(197, 184, 171, 0.45);
+  --panel-glass-border: rgba(197, 184, 171, 0.34);
+  --panel-shell-border: rgba(197, 184, 171, 0.28);
   --chip-bg: rgba(255, 255, 255, 0.72);
   --chip-bg-strong: rgba(255, 255, 255, 0.82);
   --chip-border: rgba(255, 255, 255, 0.7);
   --input-bg: rgba(255, 255, 255, 0.8);
   --input-bg-focus: rgba(255, 255, 255, 0.96);
   --image-placeholder-bg:
-    radial-gradient(circle at 22% 18%, rgba(220, 192, 158, 0.34), transparent 18%),
-    radial-gradient(circle at 76% 22%, rgba(207, 171, 166, 0.3), transparent 18%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(243, 230, 220, 0.92));
+    radial-gradient(circle at 22% 18%, rgba(201, 169, 110, 0.24), transparent 18%),
+    radial-gradient(circle at 76% 22%, rgba(212, 169, 162, 0.22), transparent 18%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(245, 237, 228, 0.92));
   --image-overlay-bg:
     linear-gradient(180deg, rgba(255, 255, 255, 0.24), transparent 32%),
-    linear-gradient(0deg, rgba(36, 28, 24, 0.2), transparent 38%);
+    linear-gradient(0deg, rgba(26, 37, 54, 0.2), transparent 38%);
   --image-badge-bg: rgba(255, 255, 255, 0.78);
   --image-badge-border: rgba(255, 255, 255, 0.6);
-  --outline-fade-color: rgba(215, 190, 164, 0.4);
+  --outline-fade-color: rgba(197, 184, 171, 0.4);
   --accordion-bg: rgba(255, 255, 255, 0.24);
   --accordion-open-bg: rgba(255, 255, 255, 0.4);
   --accordion-button-bg: rgba(255, 255, 255, 0.78);
-  --shadow-soft: 0 28px 72px rgba(71, 50, 35, 0.11);
-  --shadow-card: 0 24px 60px rgba(79, 56, 38, 0.11);
-  --shadow-panel: 0 34px 96px rgba(96, 68, 45, 0.12);
-  --shadow-elevated: 0 36px 90px rgba(80, 59, 43, 0.16);
-  --shadow-input: 0 10px 24px rgba(80, 59, 43, 0.04);
+  --shadow-soft: 0 28px 72px rgba(26, 37, 54, 0.09);
+  --shadow-card: 0 24px 60px rgba(26, 37, 54, 0.09);
+  --shadow-panel: 0 34px 96px rgba(26, 37, 54, 0.10);
+  --shadow-elevated: 0 36px 90px rgba(26, 37, 54, 0.14);
+  --shadow-input: 0 10px 24px rgba(26, 37, 54, 0.04);
 }
 
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --background: #171211;
-  --background-alt: #201815;
-  --foreground: #f4eadf;
-  --surface: rgba(39, 31, 29, 0.9);
-  --surface-strong: #2b211f;
-  --surface-muted: #322825;
-  --card: rgba(38, 30, 27, 0.94);
-  --card-foreground: #f4eadf;
-  --muted: #c3b09f;
-  --muted-strong: #e3cfbd;
-  --border: #4b3e36;
-  --border-strong: #6d584b;
-  --primary: #d0b08f;
-  --primary-strong: #e4c8a7;
-  --primary-foreground: #231916;
-  --primary-soft-bg: rgba(208, 176, 143, 0.14);
-  --primary-soft-border: rgba(208, 176, 143, 0.26);
-  --accent: #b88a83;
-  --accent-foreground: #fff4ef;
-  --rose: #9e7b74;
-  --champagne: #b89c77;
-  --sand: #5f4d44;
-  --contrast: #f1e4d7;
-  --contrast-foreground: #241915;
+  --background: #131B26;
+  --background-alt: #1A2436;
+  --foreground: #F0E8DF;
+  --surface: rgba(30, 40, 55, 0.9);
+  --surface-strong: #243042;
+  --surface-muted: #1E2A3C;
+  --card: rgba(28, 38, 54, 0.94);
+  --card-foreground: #F0E8DF;
+  --muted: #A8B4C2;
+  --muted-strong: #CBD5E0;
+  --border: #2E3E52;
+  --border-strong: #3E5268;
+  --primary: #C9A96E;
+  --primary-strong: #DBBF88;
+  --primary-foreground: #131B26;
+  --primary-soft-bg: rgba(201, 169, 110, 0.14);
+  --primary-soft-border: rgba(201, 169, 110, 0.26);
+  --accent: #B88A83;
+  --accent-foreground: #FFF4EF;
+  --rose: #9E7B74;
+  --champagne: #C9A96E;
+  --sand: #2E3E52;
+  --contrast: #F0E8DF;
+  --contrast-foreground: #131B26;
   --success: #7fc6a4;
   --danger: #f0b2ac;
-  --placeholder: rgba(244, 234, 223, 0.45);
-  --selection: rgba(208, 176, 143, 0.28);
-  --hero-bg: #1a1210;
-  --hero-bg-subtle: #261c18;
-  --hero-text: #f4eadf;
-  --hero-muted: rgba(244, 234, 223, 0.55);
-  --hero-accent: #d0b08f;
-  --hero-glow: rgba(208, 176, 143, 0.10);
-  --hero-border: rgba(208, 176, 143, 0.12);
+  --placeholder: rgba(240, 232, 223, 0.45);
+  --selection: rgba(201, 169, 110, 0.28);
+  --hero-bg: #0F1620;
+  --hero-bg-subtle: #1A2536;
+  --hero-text: #F0E8DF;
+  --hero-muted: rgba(240, 232, 223, 0.55);
+  --hero-accent: #C9A96E;
+  --hero-glow: rgba(201, 169, 110, 0.10);
+  --hero-border: rgba(201, 169, 110, 0.14);
   --page-gradient:
-    radial-gradient(circle at top left, rgba(184, 156, 119, 0.18), transparent 24%),
-    radial-gradient(circle at 84% 10%, rgba(184, 138, 131, 0.14), transparent 22%),
-    linear-gradient(180deg, #221917 0%, #1b1513 42%, #161110 100%);
+    radial-gradient(circle at top left, rgba(201, 169, 110, 0.12), transparent 24%),
+    radial-gradient(circle at 84% 10%, rgba(184, 138, 131, 0.10), transparent 22%),
+    linear-gradient(180deg, #1A2436 0%, #151E2C 42%, #131B26 100%);
   --hero-mesh-bg:
-    radial-gradient(circle at 18% 18%, rgba(184, 138, 131, 0.22), transparent 24%),
-    radial-gradient(circle at 78% 12%, rgba(184, 156, 119, 0.2), transparent 24%),
-    radial-gradient(circle at 62% 78%, rgba(208, 176, 143, 0.12), transparent 28%),
-    linear-gradient(180deg, rgba(45, 35, 32, 0.92), rgba(27, 21, 19, 0.82));
+    radial-gradient(circle at 18% 18%, rgba(184, 138, 131, 0.18), transparent 24%),
+    radial-gradient(circle at 78% 12%, rgba(201, 169, 110, 0.16), transparent 24%),
+    radial-gradient(circle at 62% 78%, rgba(201, 169, 110, 0.10), transparent 28%),
+    linear-gradient(180deg, rgba(30, 40, 56, 0.92), rgba(19, 27, 38, 0.82));
   --panel-soft-bg:
-    linear-gradient(180deg, rgba(45, 35, 32, 0.96), rgba(31, 24, 22, 0.92));
+    linear-gradient(180deg, rgba(30, 40, 56, 0.96), rgba(19, 27, 38, 0.92));
   --panel-rose-bg:
-    linear-gradient(180deg, rgba(54, 40, 37, 0.96), rgba(37, 28, 25, 0.92));
+    linear-gradient(180deg, rgba(38, 34, 40, 0.96), rgba(25, 22, 28, 0.92));
   --panel-champagne-bg:
-    linear-gradient(180deg, rgba(51, 40, 35, 0.96), rgba(35, 27, 24, 0.92));
+    linear-gradient(180deg, rgba(40, 36, 30, 0.96), rgba(26, 24, 20, 0.92));
   --panel-contrast-bg:
-    linear-gradient(180deg, rgba(241, 228, 215, 0.95), rgba(219, 201, 183, 0.92));
+    linear-gradient(180deg, rgba(240, 232, 223, 0.95), rgba(219, 201, 183, 0.92));
   --panel-glass-bg:
-    linear-gradient(180deg, rgba(52, 41, 38, 0.82), rgba(33, 26, 24, 0.72));
+    linear-gradient(180deg, rgba(36, 48, 66, 0.82), rgba(22, 30, 42, 0.72));
   --panel-shell-bg:
-    linear-gradient(180deg, rgba(45, 35, 32, 0.86), rgba(27, 21, 19, 0.78));
-  --panel-soft-border: rgba(228, 205, 186, 0.18);
-  --panel-glass-border: rgba(228, 205, 186, 0.16);
-  --panel-shell-border: rgba(228, 205, 186, 0.14);
-  --chip-bg: rgba(53, 41, 38, 0.72);
-  --chip-bg-strong: rgba(41, 31, 29, 0.86);
-  --chip-border: rgba(228, 205, 186, 0.18);
-  --input-bg: rgba(48, 37, 34, 0.82);
-  --input-bg-focus: rgba(56, 43, 39, 0.94);
+    linear-gradient(180deg, rgba(30, 40, 56, 0.86), rgba(19, 27, 38, 0.78));
+  --panel-soft-border: rgba(201, 169, 110, 0.14);
+  --panel-glass-border: rgba(201, 169, 110, 0.12);
+  --panel-shell-border: rgba(201, 169, 110, 0.10);
+  --chip-bg: rgba(36, 48, 66, 0.72);
+  --chip-bg-strong: rgba(28, 38, 54, 0.86);
+  --chip-border: rgba(201, 169, 110, 0.14);
+  --input-bg: rgba(30, 40, 56, 0.82);
+  --input-bg-focus: rgba(36, 48, 66, 0.94);
   --image-placeholder-bg:
-    radial-gradient(circle at 22% 18%, rgba(184, 156, 119, 0.22), transparent 18%),
-    radial-gradient(circle at 76% 22%, rgba(184, 138, 131, 0.18), transparent 18%),
-    linear-gradient(180deg, rgba(69, 54, 49, 0.84), rgba(37, 29, 26, 0.94));
+    radial-gradient(circle at 22% 18%, rgba(201, 169, 110, 0.18), transparent 18%),
+    radial-gradient(circle at 76% 22%, rgba(184, 138, 131, 0.14), transparent 18%),
+    linear-gradient(180deg, rgba(36, 48, 66, 0.84), rgba(19, 27, 38, 0.94));
   --image-overlay-bg:
-    linear-gradient(180deg, rgba(255, 247, 238, 0.08), transparent 34%),
-    linear-gradient(0deg, rgba(13, 10, 9, 0.42), transparent 42%);
-  --image-badge-bg: rgba(36, 28, 25, 0.74);
-  --image-badge-border: rgba(228, 205, 186, 0.18);
-  --outline-fade-color: rgba(228, 205, 186, 0.18);
+    linear-gradient(180deg, rgba(255, 248, 240, 0.06), transparent 34%),
+    linear-gradient(0deg, rgba(13, 18, 26, 0.42), transparent 42%);
+  --image-badge-bg: rgba(19, 27, 38, 0.74);
+  --image-badge-border: rgba(201, 169, 110, 0.14);
+  --outline-fade-color: rgba(201, 169, 110, 0.14);
   --accordion-bg: rgba(255, 250, 245, 0.04);
   --accordion-open-bg: rgba(255, 250, 245, 0.08);
   --accordion-button-bg: rgba(255, 250, 245, 0.04);

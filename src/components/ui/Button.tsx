@@ -24,7 +24,7 @@ const variantClasses: Record<ButtonVariant, string> = {
   whatsapp:
     "border border-[#1f6f54]/85 bg-[linear-gradient(135deg,#2a8667_0%,#1f6f54_100%)] text-white shadow-[0_16px_34px_rgba(31,111,84,0.24)] hover:bg-[linear-gradient(135deg,#24785d_0%,#195944_100%)] hover:shadow-[0_22px_42px_rgba(31,111,84,0.28)]",
   champagne:
-    "border border-hero-accent/50 bg-[linear-gradient(135deg,var(--hero-accent)_0%,#b8956e_100%)] text-[#1a1210] shadow-[0_16px_40px_rgba(212,184,150,0.2)] hover:border-hero-accent/70 hover:shadow-[0_20px_50px_rgba(212,184,150,0.26)] hover:brightness-[1.03]",
+    "border border-hero-accent/50 bg-[linear-gradient(135deg,var(--hero-accent)_0%,#A8893E_100%)] text-[#1A2536] shadow-[0_16px_40px_rgba(201,169,110,0.2)] hover:border-hero-accent/70 hover:shadow-[0_20px_50px_rgba(201,169,110,0.26)] hover:brightness-[1.03]",
 };
 
 const sizeClasses: Record<ButtonSize, string> = {

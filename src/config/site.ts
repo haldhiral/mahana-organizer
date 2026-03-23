@@ -26,6 +26,19 @@ export const siteConfig = {
   serviceAreas: ["Jakarta", "Bogor", "Depok", "Bekasi", "Tangerang"] as const,
   logoPath: "/logo-mark.svg",
   ogImagePath: "/opengraph-image",
+  theme: {
+    lightColor: "#f8f1ea",
+    darkColor: "#1b1513",
+    backgroundColor: "#fff8f0",
+    themeColor: "#2c3e50",
+  },
+  icon: {
+    background: "#fff8f0",
+    surface: "rgba(255, 253, 249, 0.82)",
+    foreground: "#1c2a3a",
+    accent: "#c9a96e",
+    border: "#ddd5cc",
+  },
   socialLinks: {
     instagram: "https://instagram.com/mahanaorganizer",
     tiktok: "https://tiktok.com/@mahanaorganizer",
@@ -40,13 +53,31 @@ export const siteConfig = {
   },
 } as const;
 
+function normalizePathname(pathname = "/") {
+  if (!pathname || pathname === "/") {
+    return "/";
+  }
+
+  const withLeadingSlash = pathname.startsWith("/") ? pathname : `/${pathname}`;
+  return withLeadingSlash.replace(/\/+$/, "") || "/";
+}
+
 export function getAbsoluteUrl(pathname = "/") {
-  return new URL(pathname, siteConfig.domain).toString();
+  return new URL(normalizePathname(pathname), siteConfig.domain).toString();
+}
+
+export function getLocalizedPathname(locale: AppLocale, pathname = "/") {
+  const normalizedPath = normalizePathname(pathname);
+
+  if (locale === siteConfig.defaultLocale) {
+    return normalizedPath;
+  }
+
+  return normalizedPath === "/" ? `/${locale}` : `/${locale}${normalizedPath}`;
 }
 
 export function getLocalizedUrl(locale: AppLocale, pathname = "/") {
-  const normalizedPath = pathname === "/" ? "" : pathname;
-  return getAbsoluteUrl(`/${locale}${normalizedPath}`);
+  return getAbsoluteUrl(getLocalizedPathname(locale, pathname));
 }
 
 type LanguageAlternates = Record<AppLocale, string> & {

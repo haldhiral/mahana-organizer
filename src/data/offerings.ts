@@ -5,6 +5,8 @@ type LocalizedString = Record<AppLocale, string>;
 type OnTheDayCard = {
   id: "intimate" | "standard" | "royal";
   name: string;
+  tierLabel: string;
+  tierSize: string;
   price: string;
   summary: string;
   crewLabel: string;
@@ -390,6 +392,11 @@ export function getWeddingOfferings(locale: AppLocale): WeddingOfferings {
         {
           id: "intimate",
           name: "INTIMATE",
+          tierLabel: "Small",
+          tierSize: t(locale, {
+            id: "5 crew standby",
+            en: "5 crew standby",
+          }),
           price: "Rp3.500.000,-",
           summary: t(locale, {
             id: "Pilihan esensial untuk intimate wedding dan resepsi keluarga yang membutuhkan koordinasi lapangan yang rapi namun tetap ringan.",
@@ -427,6 +434,11 @@ export function getWeddingOfferings(locale: AppLocale): WeddingOfferings {
         {
           id: "standard",
           name: "STANDARD",
+          tierLabel: "Medium",
+          tierSize: t(locale, {
+            id: "7 crew standby",
+            en: "7 crew standby",
+          }),
           price: "Rp4.500.000,-",
           summary: t(locale, {
             id: "Format seimbang untuk pasangan yang membutuhkan kapasitas tim lebih besar dan kontrol vendor yang lebih luas pada hari acara.",
@@ -465,6 +477,11 @@ export function getWeddingOfferings(locale: AppLocale): WeddingOfferings {
         {
           id: "royal",
           name: "ROYAL",
+          tierLabel: "Large",
+          tierSize: t(locale, {
+            id: "10+ crew standby",
+            en: "10+ crew standby",
+          }),
           price: "Rp6.000.000,-",
           summary: t(locale, {
             id: "Pendampingan paling lengkap untuk acara yang melibatkan lebih banyak tamu, stakeholder keluarga, dan kebutuhan kontrol lapangan yang tinggi.",
