@@ -67,7 +67,12 @@ export function Header() {
     >
       <Container className="flex h-[4.75rem] items-center justify-between gap-4">
         <Link href="/" className="flex items-center gap-3" onClick={() => setIsMenuOpen(false)}>
-          <div className="surface-card-strong flex h-12 w-12 items-center justify-center rounded-full border-border/60">
+          <div className={cn(
+            "flex h-12 w-12 items-center justify-center rounded-full transition-all duration-300",
+            solidHeader
+              ? "surface-card-strong border-border/60"
+              : "border border-hero-border bg-hero-bg-subtle/40 backdrop-blur-sm",
+          )}>
             <Image
               src="/logo-mark.svg"
               alt={siteConfig.name}
@@ -76,7 +81,10 @@ export function Header() {
               priority
             />
           </div>
-          <span className="text-[1.02rem] font-bold tracking-[0.08em] text-foreground sm:text-lg">
+          <span className={cn(
+            "text-[1.02rem] font-bold tracking-[0.1em] transition-colors duration-300 sm:text-lg",
+            solidHeader ? "text-foreground" : "text-hero-text",
+          )}>
             MAHANA
           </span>
         </Link>
@@ -90,16 +98,22 @@ export function Header() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "inline-flex items-center gap-2 rounded-full px-4 py-2.5 text-[0.95rem] font-medium transition-all duration-200",
+                  "inline-flex items-center gap-2 rounded-full px-4 py-2.5 text-[0.92rem] font-medium tracking-[0.01em] transition-all duration-300",
                   active
-                    ? "bg-contrast text-contrast-foreground shadow-[var(--shadow-soft)]"
-                    : "text-foreground/75 hover:bg-surface/76 hover:text-foreground",
+                    ? solidHeader
+                      ? "bg-contrast text-contrast-foreground shadow-[var(--shadow-soft)]"
+                      : "bg-white/12 text-hero-text shadow-[0_8px_24px_rgba(0,0,0,0.15)] backdrop-blur-sm"
+                    : solidHeader
+                      ? "text-foreground/75 hover:bg-surface/76 hover:text-foreground"
+                      : "text-hero-text/70 hover:bg-white/8 hover:text-hero-text",
                 )}
               >
                 <span
                   className={cn(
                     "h-1.5 w-1.5 rounded-full transition-opacity",
-                    active ? "bg-current opacity-80" : "bg-primary/60 opacity-0",
+                    active ? "bg-current opacity-80" : "opacity-0",
+                    !solidHeader && !active && "bg-hero-accent/60",
+                    solidHeader && !active && "bg-primary/60",
                   )}
                 />
                 {tNav(item.labelKey)}
@@ -111,7 +125,13 @@ export function Header() {
         <div className="hidden items-center gap-3 lg:flex">
           <ThemeToggle />
           <LanguageSwitcher compact />
-          <Link href="/contact" className={buttonStyles()}>
+          <Link
+            href="/contact"
+            className={cn(
+              buttonStyles(),
+              !solidHeader && "border-hero-accent/40 bg-[linear-gradient(135deg,var(--hero-accent)_0%,#b8956e_100%)] text-[#1a1210] shadow-[0_12px_32px_rgba(212,184,150,0.15)] hover:border-hero-accent/60 hover:shadow-[0_16px_40px_rgba(212,184,150,0.2)]",
+            )}
+          >
             {tCommon("consultationCta")}
           </Link>
         </div>

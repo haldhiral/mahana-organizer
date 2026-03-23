@@ -52,7 +52,7 @@ export function CTASection({
             <div className="absolute -left-20 -top-4 h-32 w-32 rounded-full bg-champagne/20 blur-3xl" />
             <div className="absolute right-0 top-10 h-28 w-28 rounded-full bg-rose/28 blur-3xl" />
             <p className="eyebrow-label mb-4">{eyebrow}</p>
-            <h2 className="font-serif text-[2.15rem] leading-[1.03] tracking-[-0.01em] text-balance sm:text-[3rem] lg:text-[3.45rem]">
+            <h2 className="font-serif text-[2.25rem] leading-[1.03] tracking-[-0.015em] text-balance sm:text-[3.15rem] lg:text-[3.6rem]">
               {title}
             </h2>
             <p className="mt-5 max-w-2xl text-base leading-8 text-muted-foreground sm:text-lg">

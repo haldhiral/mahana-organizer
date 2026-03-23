@@ -94,6 +94,14 @@ function HomePageContent({ locale }: { locale: AppLocale }) {
 
       <HeroSection />
 
+      {/* Transition from dark hero to light content */}
+      <div
+        className="pointer-events-none h-24 sm:h-32"
+        style={{
+          background: "linear-gradient(180deg, var(--hero-bg) 0%, var(--background) 100%)",
+        }}
+      />
+
       <section className="section-pad pt-0">
         <Container>
           <SectionHeading

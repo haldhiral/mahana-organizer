@@ -2,9 +2,11 @@
 
 :root {
   color-scheme: light;
-  --font-display: "Baskerville", "Iowan Old Style", "Palatino Linotype",
-    "Book Antiqua", Palatino, Georgia, serif;
-  --font-body: "Avenir Next", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;
+  --font-display: var(--font-playfair, "Playfair Display"), "Baskerville",
+    "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia,
+    serif;
+  --font-body: var(--font-inter, "Inter"), "Avenir Next", "Segoe UI",
+    "Helvetica Neue", Helvetica, sans-serif;
   --background: #f8f1ea;
   --background-alt: #f2e6db;
   --foreground: #241a17;
@@ -33,6 +35,13 @@
   --danger: #a95a58;
   --placeholder: rgba(109, 95, 84, 0.6);
   --selection: rgba(201, 158, 154, 0.36);
+  --hero-bg: #1e1412;
+  --hero-bg-subtle: #2a1e1a;
+  --hero-text: #faf3ec;
+  --hero-muted: rgba(250, 243, 236, 0.58);
+  --hero-accent: #d4b896;
+  --hero-glow: rgba(212, 184, 150, 0.12);
+  --hero-border: rgba(212, 184, 150, 0.15);
   --page-gradient:
     radial-gradient(circle at top left, rgba(220, 192, 158, 0.25), transparent 24%),
     radial-gradient(circle at 86% 8%, rgba(207, 171, 166, 0.18), transparent 22%),
@@ -112,6 +121,13 @@
   --danger: #f0b2ac;
   --placeholder: rgba(244, 234, 223, 0.45);
   --selection: rgba(208, 176, 143, 0.28);
+  --hero-bg: #1a1210;
+  --hero-bg-subtle: #261c18;
+  --hero-text: #f4eadf;
+  --hero-muted: rgba(244, 234, 223, 0.55);
+  --hero-accent: #d0b08f;
+  --hero-glow: rgba(208, 176, 143, 0.10);
+  --hero-border: rgba(208, 176, 143, 0.12);
   --page-gradient:
     radial-gradient(circle at top left, rgba(184, 156, 119, 0.18), transparent 24%),
     radial-gradient(circle at 84% 10%, rgba(184, 138, 131, 0.14), transparent 22%),
@@ -188,6 +204,12 @@
   --color-contrast-foreground: var(--contrast-foreground);
   --color-success: var(--success);
   --color-danger: var(--danger);
+  --color-hero-bg: var(--hero-bg);
+  --color-hero-bg-subtle: var(--hero-bg-subtle);
+  --color-hero-text: var(--hero-text);
+  --color-hero-muted: var(--hero-muted);
+  --color-hero-accent: var(--hero-accent);
+  --color-hero-border: var(--hero-border);
 }
 
 @layer base {
@@ -383,6 +405,52 @@
     background: var(--hero-mesh-bg);
   }
 
+  .luxury-hero {
+    position: relative;
+    background: var(--hero-bg);
+    color: var(--hero-text);
+    overflow: hidden;
+  }
+
+  .luxury-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 70% 50% at 50% 40%, var(--hero-glow), transparent),
+      radial-gradient(circle at 20% 80%, rgba(212, 184, 150, 0.06), transparent 40%),
+      radial-gradient(circle at 80% 20%, rgba(184, 138, 131, 0.05), transparent 40%);
+    pointer-events: none;
+    animation: glow-pulse 8s ease-in-out infinite alternate;
+  }
+
+  .luxury-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 100%, rgba(0, 0, 0, 0.35), transparent 70%);
+    pointer-events: none;
+  }
+
+  .luxury-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.25rem;
+  }
+
+  .luxury-stat-divider {
+    width: 1px;
+    align-self: stretch;
+    background: linear-gradient(
+      180deg,
+      transparent,
+      var(--hero-border),
+      transparent
+    );
+  }
+
   .outline-fade {
     border: 1px solid var(--outline-fade-color);
   }
@@ -494,6 +562,16 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes glow-pulse {
+  from {
+    opacity: 0.7;
+  }
+
+  to {
+    opacity: 1;
   }
 }
 

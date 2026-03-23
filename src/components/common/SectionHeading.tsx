@@ -33,7 +33,7 @@ export function SectionHeading({
           <span className="gold-divider mb-5 inline-block" aria-hidden="true" />
         </>
       ) : null}
-      <HeadingTag className="font-serif text-[2.15rem] leading-[1.06] text-balance text-foreground sm:text-[2.7rem] lg:text-[3.2rem]">
+      <HeadingTag className="font-serif text-[2.25rem] leading-[1.05] tracking-[-0.015em] text-balance text-foreground sm:text-[2.85rem] lg:text-[3.4rem]">
         {title}
       </HeadingTag>
       {description ? (

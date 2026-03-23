@@ -125,15 +125,35 @@
   },
   "home": {
     "hero": {
+      "availability": "Menerima wedding 2025–2026",
+      "kicker": "Wedding Organizer · Jabodetabek",
       "eyebrow": "Wedding organizer untuk Jakarta, Bogor, Depok, Bekasi, dan Tangerang",
-      "title": "Mahana Organizer menata hari pernikahan yang terasa hangat, elegan, dan tenang.",
-      "description": "Kami membantu pasangan merancang alur acara, koordinasi vendor, dan pengalaman tamu yang rapi untuk pernikahan di {areas}.",
+      "title": "Di mana keanggunan bertemu ketenangan, hari pernikahan Anda terasa sempurna.",
+      "description": "Kami menata alur acara, koordinasi vendor, dan pengalaman tamu agar perayaan Anda terasa ringan, hangat, dan benar-benar milik Anda.",
       "primaryCta": "Jadwalkan Konsultasi",
       "secondaryCta": "Mulai via WhatsApp",
       "imageLabel": "Ilustrasi suasana wedding planning Mahana Organizer",
       "highlightTitle": "Pendampingan yang jelas sejak briefing pertama hingga koordinasi vendor terakhir.",
       "highlightBody": "Setiap detail dirapikan agar Anda bisa hadir penuh di momen penting tanpa harus memikirkan teknis kecil yang seharusnya dipegang tim organizer.",
       "coverageLabel": "Cakupan",
+      "trustStats": {
+        "couples": {
+          "value": "50+",
+          "label": "Pasangan bahagia"
+        },
+        "experience": {
+          "value": "4 Thn",
+          "label": "Pengalaman"
+        },
+        "rating": {
+          "value": "4.9",
+          "label": "Rating Google"
+        },
+        "cities": {
+          "value": "5",
+          "label": "Kota layanan"
+        }
+      },
       "stats": {
         "planning": "Perencanaan yang terstruktur dan realistis.",
         "coordination": "Eksekusi hari-H yang tenang dan sigap.",

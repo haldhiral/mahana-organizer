@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 type PremiumSectionShellProps = {
   children: ReactNode;
   className?: string;
-  tone?: "soft" | "rose" | "champagne" | "contrast";
+  tone?: "soft" | "rose" | "champagne" | "contrast" | "dark";
 };
 
 const toneClasses = {
@@ -13,6 +13,7 @@ const toneClasses = {
   rose: "tone-rose",
   champagne: "tone-champagne",
   contrast: "tone-contrast",
+  dark: "luxury-hero",
 } as const;
 
 export function PremiumSectionShell({

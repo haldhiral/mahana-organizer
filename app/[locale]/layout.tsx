@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Inter, Playfair_Display } from "next/font/google";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 
@@ -20,6 +21,19 @@ import { isValidLocale, routing } from "@/i18n/routing";
 import { getOpenGraphLocale } from "@/lib/seo";
 
 import "../globals.css";
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-playfair",
+  weight: ["400", "500", "600", "700"],
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
 
 export const viewport: Viewport = {
   themeColor: [
@@ -121,7 +135,7 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
-      className="h-full"
+      className={`h-full ${playfair.variable} ${inter.variable}`}
       data-theme="light"
       suppressHydrationWarning
     >

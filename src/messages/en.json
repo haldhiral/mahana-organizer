@@ -125,15 +125,35 @@
   },
   "home": {
     "hero": {
+      "availability": "Accepting 2025–2026 weddings",
+      "kicker": "Wedding Organizer · Jabodetabek",
       "eyebrow": "Wedding organizer serving Jakarta, Bogor, Depok, Bekasi, and Tangerang",
-      "title": "Mahana Organizer shapes wedding days that feel warm, elegant, and effortlessly calm.",
-      "description": "We help couples refine the event flow, vendor coordination, and guest experience for weddings across {areas}.",
+      "title": "Where elegance meets calm, your wedding day unfolds beautifully.",
+      "description": "We shape the event flow, vendor coordination, and guest experience so your celebration feels effortless, warm, and truly yours.",
       "primaryCta": "Book a Consultation",
       "secondaryCta": "Start on WhatsApp",
       "imageLabel": "Illustration of Mahana Organizer wedding planning atmosphere",
       "highlightTitle": "Clear guidance from the first briefing to the final vendor coordination.",
       "highlightBody": "Every detail is structured so you can stay fully present in your most important moments without carrying the technical load yourself.",
       "coverageLabel": "Coverage",
+      "trustStats": {
+        "couples": {
+          "value": "50+",
+          "label": "Happy couples"
+        },
+        "experience": {
+          "value": "4 Yrs",
+          "label": "Experience"
+        },
+        "rating": {
+          "value": "4.9",
+          "label": "Google rating"
+        },
+        "cities": {
+          "value": "5",
+          "label": "Cities served"
+        }
+      },
       "stats": {
         "planning": "Structured planning with realistic priorities.",
         "coordination": "Calm and responsive event-day execution.",
