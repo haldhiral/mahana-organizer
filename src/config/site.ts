@@ -1,6 +1,16 @@
 import type { AppLocale } from "@/i18n/routing";
 import { routing } from "@/i18n/routing";
 
+const DEFAULT_SITE_URL = "https://www.mahanaorganizer.com";
+
+function normalizeSiteUrl(siteUrl: string) {
+  return new URL(siteUrl).origin;
+}
+
+const canonicalSiteUrl = normalizeSiteUrl(
+  process.env.NEXT_PUBLIC_SITE_URL ?? DEFAULT_SITE_URL,
+);
+
 const whatsappDefaultMessage = {
   id: "Halo Mahana Organizer, saya ingin menjadwalkan konsultasi untuk pernikahan saya.",
   en: "Hello Mahana Organizer, I would like to schedule a consultation for my wedding.",
@@ -9,7 +19,7 @@ const whatsappDefaultMessage = {
 export const siteConfig = {
   name: "Mahana Organizer",
   shortName: "Mahana",
-  domain: "https://mahanaorganizer.com",
+  domain: canonicalSiteUrl,
   category: "Wedding Organizer / Event Planner",
   defaultLocale: routing.defaultLocale,
   locales: routing.locales,

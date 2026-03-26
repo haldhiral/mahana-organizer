@@ -28,7 +28,15 @@ Production-ready bilingual marketing website for Mahana Organizer, a wedding org
 - Supported locales are configured in [src/i18n/routing.ts](/c:/Dev/mahana-organizer/src/i18n/routing.ts).
 - Request configuration for `next-intl` lives in [src/i18n/request.ts](/c:/Dev/mahana-organizer/src/i18n/request.ts).
 - Translation catalogs live in [src/messages/id.json](/c:/Dev/mahana-organizer/src/messages/id.json) and [src/messages/en.json](/c:/Dev/mahana-organizer/src/messages/en.json).
-- `proxy.ts` handles locale-prefixed routing and redirects `/` to `/id`.
+- `proxy.ts` handles hostname canonicalization, default-locale normalization, and legacy SEO redirects while preserving `next-intl` routing.
+
+## SEO and Hostname
+
+- Canonical production host is `https://www.mahanaorganizer.com`.
+- Non-`www` requests to `https://mahanaorganizer.com` permanently redirect to the canonical `www` host.
+- Indonesian (`id`) is the default locale and remains unprefixed, for example `/about`.
+- English pages remain prefixed with `/en`, for example `/en/about`.
+- Set `NEXT_PUBLIC_SITE_URL=https://www.mahanaorganizer.com` in production so metadata, schema, sitemap, and robots all emit the canonical host.
 
 ## Updating Site Information
 
