@@ -6,6 +6,21 @@ const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
+  async redirects() {
+    return [
+      // Issue 3: 404 pages from old/renamed routes
+      {
+        source: "/services-Layanan",
+        destination: "/services",
+        permanent: true,
+      },
+      {
+        source: "/about-Tentang",
+        destination: "/about",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default withNextIntl(nextConfig);
