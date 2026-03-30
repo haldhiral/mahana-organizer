@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "mahanaorganizer.com" }],
+      "destination": "https://www.mahanaorganizer.com/:path*",
+      "permanent": true
+    }
+  ]
+}
