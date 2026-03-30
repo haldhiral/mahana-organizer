@@ -26,7 +26,6 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       // Non-prefixed paths → default locale (id)
-      { source: "/", destination: "/id", permanent: true },
       { source: "/about", destination: "/id/about", permanent: true },
       { source: "/services", destination: "/id/services", permanent: true },
       { source: "/packages", destination: "/id/packages", permanent: true },
