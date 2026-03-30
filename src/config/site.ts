@@ -78,11 +78,6 @@ export function getAbsoluteUrl(pathname = "/") {
 
 export function getLocalizedPathname(locale: AppLocale, pathname = "/") {
   const normalizedPath = normalizePathname(pathname);
-
-  if (locale === siteConfig.defaultLocale) {
-    return normalizedPath;
-  }
-
   return normalizedPath === "/" ? `/${locale}` : `/${locale}${normalizedPath}`;
 }
 
